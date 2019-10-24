@@ -10,6 +10,12 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/8c36e38b79.js" crossorigin="anonymous"></script>
+
+    <!-- YAMM -->
+    <link rel="stylesheet" href="yamm.css" crossorigin="anonymous">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -87,13 +93,52 @@
         box-sizing: border-box;
         display: block;
         border-left: solid 7px rgb(230, 178, 32);
-        padding: 5px;
+        padding: 5px 5px 5px 8px;
+        hieght: 200px;
       }
 
       .feature-box-header {
         color: rgb(0, 48, 85);
         font-size: 2.0em;
         font-family: "Oswald", serif;
+        margin: 0 0 10px 0;
+      }
+
+      .feature-box-intro-text {
+        color: 333;
+        font-size: 1.2em;
+        font-family: "Merriweather serif", serif;
+        font-style: italic;
+        margin: 0 0 10px 0;
+      }
+
+      .feature-box-hours {
+        background-color: #999;
+      }
+
+      .feature-box-sub-header {
+        color: #393939;
+        font-family: "Oswald", sans-serif;
+        font-size: 1.2em;
+        font-weight: 700;
+      }
+
+      .feature-box-text {
+        color: #393939;
+        font-family: "Oswald", sans-serif;
+        font-size: 1.2em;
+      }
+
+      .feature-box-contacts {
+
+      }
+
+      .page-header {
+        text-align: center;
+        font-size: 3.0em;
+        font-weight: 300;
+        font-family: "Oswald", sans-serif;
+        color: #666;
       }
 
     </style>
@@ -110,7 +155,7 @@
     </div> <!-- /csp-lib-logo-home -->
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar yamm navbar-default" role="navigation">
 
       <div class="navbar-header">
       
@@ -167,9 +212,15 @@
     <!-- Services -->
     <div class="container">
 
+      <div class="page-header">
+
+        Explore services in the Library
+
+      </div>
+
       <div class="row">
 
-        <div class="col-md-3">
+        <div class="col-md-4">
 
           <div class="feature-box">
 
@@ -179,17 +230,63 @@
 
             </div>
 
+            <div class="feature-box-intro-text">
+
+              Help finding and evaluating resources for your assignments
+
+            </div>
+
+            <div class="feature-box-sub-header">
+
+              Today's Hours:
+
+            </div>
+
+            <div class="feature-box-text">
+
+             7:45 am - 11:00 pm 
+
+            </div>
+
+            <div class="feature-box-text">
+
+              <i class="fas fa-comment"></i> Chat with a Librarian 24x7<br />
+              <i class="fas fa-mobile"></i> Call us at 651-XXX-XXXX<br />
+              Email us<br />
+              Visit us...<br />
+              Schedule an appointment with a Librarian
+
+            </div>
+
           </div>
 
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-4">
 
           <div class="feature-box">
           
             <div class="feature-box-header">
 
-              TUTORING
+              TUTORING & WRITING
+
+            </div>
+
+            <div class="feature-box-intro-text">
+
+              Subject-specific tutoring and help drafting and revising papers
+
+            </div>
+
+            <div class="feature-box-sub-header">
+
+              Today's Hours:
+
+            </div>
+
+            <div class="feature-box-text">
+
+             9:00 am - 5:00 pm 
 
             </div>
 
@@ -197,21 +294,7 @@
 
         </div>
 
-        <div class="col-md-3">
-
-          <div class="feature-box">
-
-            <div class="feature-box-header">
-
-              WRITING
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-3">
+        <div class="col-md-4">
 
           <div class="feature-box">
 
@@ -221,12 +304,51 @@
 
             </div>
 
+            <div class="feature-box-intro-text">
+
+              Technology assistance for students, faculty, and staff
+
+            </div>
+
+            <div class="feature-box-sub-header">
+
+              Today's Hours:
+
+            </div>
+
+            <div class="feature-box-text">
+
+             8:00 am - 8:00 pm 
+
+            </div>
+
           </div>
 
         </div>
 
       </div>
 
+      Services specifically for: 
+
     </div>
+
+    <!-- Events -->
+      <div class="row">
+
+        <div class="col-md-8">
+
+          USING THE LIBRARY BUILDING
+
+        </div>
+
+        <div class="col-md-4">
+
+            EVENTS
+
+            <div id="api_upc_cid9880_iid4267"></div><script type="text/javascript" src="https://api3.libcal.com/api_events.php?iid=4267&m=upc&cid=9880&audience=&c=&d=&l=5&simple=ul_date&context=object&format=js"> </script>
+
+        </div>
+
+      </div>
 
   </body>
