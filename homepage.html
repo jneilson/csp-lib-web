@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>csp-lib-web-homepage</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+      /* fonts */
+      @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700&display=swap");
+      @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+      @import url("https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy&display=swap");
+
+      .csp-gold-bg {
+        background-color: #E7B220;
+      }
+
+      /* place CSP Lib logo on homepage */
+      .csp-lib-logo-home {
+        text-align: center;
+        margin: 30px 0 30px 0;
+      }
+
+      /* style CSP Lib logo */
+      img.csp-lib-logo {
+        width: 150px;
+      }
+
+      /* center navigation bar */
+      .navbar-nav {
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+      }
+
+      .navbar {
+        background-color: transparent;
+        font-size: 1.5em;
+        font-weight: 400;
+        font-family: "Oswald", serif;
+      }
+
+      .navbar-default {
+        border: none;
+      }
+
+      .search {
+        background-color: #0A3255;
+        padding: 75px 0 75px 0;
+        text-align: center;
+        margin: 0 0 20px 0;
+      }
+
+      .search-header {
+        color: #E7B220;
+        font-size: 2.5em;
+        font-family: "Oswald", serif;
+        font-style: normal;
+        font-weight: 300;
+        margin: 0 0 20px 0;
+      }
+
+      .search-form {
+        text-align: center;
+      }
+
+      .search-form * {
+        display: inline-block;
+      }
+
+      .feature-box {
+        box-shadow: 4px 7px 15px -1px rgba(144, 144, 144, 0.5);
+        box-sizing: border-box;
+        display: block;
+        border-left: solid 7px rgb(230, 178, 32);
+        padding: 5px;
+      }
+
+      .feature-box-header {
+        color: rgb(0, 48, 85);
+        font-size: 2.0em;
+        font-family: "Oswald", serif;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    
+    <!-- CSP Lib logo -->
+    <div class="csp-lib-logo-home">
+
+      <img class="csp-lib-logo" src="csp-lib-logo.png" alt="CSP Library"></a>
+
+    </div> <!-- /csp-lib-logo-home -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+
+      <div class="navbar-header">
+      
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          
+          <span class="sr-only">Toggle navigation</span>
+
+          <span class="icon-bar"></span>
+
+          <span class="icon-bar"></span>
+
+          <span class="icon-bar"></span>
+
+        </button>
+  
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Find Resources</a></li>
+          <li><a href="#">Services</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Help</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+
+    </nav>
+
+    <!-- Search Box -->
+    <div class="search">
+
+      <div class="search-header">
+
+        What are you looking for?
+
+      </div>
+
+        <form class="form-inline search-form">
+
+          <div class="input-group input-group-lg">
+
+            <input type="text" class="form-control input-lg">
+            <span class="input-group-btn">
+              <button class="btn btn-default csp-gold-bg" type="button">Search</button>
+            </span>
+
+          </div>
+
+        </form>
+
+    </div>
+
+    <!-- Services -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-3">
+
+          <div class="feature-box">
+
+            <div class="feature-box-header">
+
+              RESEARCH HELP
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <div class="feature-box">
+          
+            <div class="feature-box-header">
+
+              TUTORING
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <div class="feature-box">
+
+            <div class="feature-box-header">
+
+              WRITING
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <div class="feature-box">
+
+            <div class="feature-box-header">
+
+              TECH. HELP DESK
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
