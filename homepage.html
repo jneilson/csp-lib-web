@@ -10,11 +10,14 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/8c36e38b79.js" crossorigin="anonymous"></script>
-
-    <!-- YAMM -->
-    <link rel="stylesheet" href="yamm.css" crossorigin="anonymous">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,10 +33,57 @@
       @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
       @import url("https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy&display=swap");
 
-      .csp-gold-bg {
-        background-color: #E7B220;
+      /* GENERIC HELPERS */
+      
+        .csp-gold-bg {
+          background-color: #E7B220;
+        }
+
+        .gray-bg {
+          background-color: #999;
+        }
+
+        .lt-gray {
+          color: #e0e0e0;
+        }
+
+        .center {
+          text-align: center;
+        }
+
+      /* LIBGUIDES SHENANIGANS - HOMEPAGE ONLY! */
+      
+        h3.s-lc-ea-h3 {
+          display: none !important;
+        }
+
+        #api_upc_cid9880_iid4267 > ul
+        {
+          padding: 0;
+        }
+        
+        #api_upc_cid9880_iid4267 > ul > li
+        {
+          border-bottom: rgba(144, 144, 144, 0.5) 1px solid;
+          padding: 5px 0 5px 0;
+          list-style: none;
+        }
+        
+        #api_upc_cid9880_iid4267 > ul > li > a
+        {
+          font-size: 120%;
+        }
+      
+      ul.quick-menu {
+        list-style-type: none;
+  margin: 0;
+  padding: 0;
       }
 
+      li.quick-menu {
+        display: inline;
+      }
+      
       /* place CSP Lib logo on homepage */
       .csp-lib-logo-home {
         text-align: center;
@@ -42,27 +92,33 @@
 
       /* style CSP Lib logo */
       img.csp-lib-logo {
-        width: 150px;
+        width: 175px;
       }
 
-      /* center navigation bar */
-      .navbar-nav {
-        float:none;
-        margin: 0 auto;
-        display: table;
-        table-layout: fixed;
-      }
+      #main-menu {
+  width: 100%;
+  text-align: center;
+  display:block;
+}
 
-      .navbar {
-        background-color: transparent;
-        font-size: 1.5em;
-        font-weight: 400;
-        font-family: "Oswald", serif;
-      }
+#main-menu li {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+#main-menu a{
+  display: block;
+  padding: 10px;
+  font-size: 1.7em;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+  color: #393939;
+}
 
-      .navbar-default {
-        border: none;
-      }
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
 
       .search {
         background-color: #0A3255;
@@ -80,12 +136,9 @@
         margin: 0 0 20px 0;
       }
 
-      .search-form {
-        text-align: center;
-      }
-
-      .search-form * {
-        display: inline-block;
+      .form-group {
+        width: 550px;
+        float:  none;
       }
 
       .feature-box {
@@ -94,7 +147,7 @@
         display: block;
         border-left: solid 7px rgb(230, 178, 32);
         padding: 5px 5px 5px 8px;
-        hieght: 200px;
+        height: 350px;
       }
 
       .feature-box-header {
@@ -106,7 +159,7 @@
 
       .feature-box-intro-text {
         color: 333;
-        font-size: 1.2em;
+        font-size: 1.3em;
         font-family: "Merriweather serif", serif;
         font-style: italic;
         margin: 0 0 10px 0;
@@ -119,14 +172,18 @@
       .feature-box-sub-header {
         color: #393939;
         font-family: "Oswald", sans-serif;
-        font-size: 1.2em;
+        font-size: 1.5em;
         font-weight: 700;
       }
 
       .feature-box-text {
         color: #393939;
         font-family: "Oswald", sans-serif;
-        font-size: 1.2em;
+        font-size: 1.3em;
+      }
+
+      ul.feature {
+        list-style: none;
       }
 
       .feature-box-contacts {
@@ -138,14 +195,96 @@
         font-size: 3.0em;
         font-weight: 300;
         font-family: "Oswald", sans-serif;
-        color: #666;
+        color: #393939;
       }
+
+      .page-header-sub {
+        font-size: 2.0em;
+        font-weight: 300;
+        font-family: "Oswald", sans-serif;
+        color: #393939;
+      }
+
+      .highlight-content__button {
+        font-family: "Oswald", serif;
+        font-size: 1.25rem;
+        color: #003055;
+        background-color: #E6B220;
+        padding: 7px 23px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 30px;
+        border: 0;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        display: inline-flex;
+      }
+    
+    .highlight-content__button:hover, .highlight-content__button:focus {
+      background-color: #2F7F7F;
+      color: #ffffff; }
+
+    .focus {
+      background-color: #e0e0e0;
+      margin: 30px 0 30px 0;
+      padding: 15px 0 15px 0;
+    }
+
+    .focus-box {
+      border: 1px solid #666;
+      border-radius: 7px;
+      text-align: center;
+      padding: 8px;
+    }
+
+    /*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ *
+ * @geedmo - Licensed under the MIT license
+ */
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+.yamm .container {
+  position: relative;
+}
+.yamm .dropdown-menu {
+  left: auto;
+}
+.yamm .yamm-content {
+  padding: 20px 30px;
+}
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
 
     </style>
 
   </head>
 
   <body>
+
+    <!-- Quick menu -->
+    <div class="container">
+
+      <div class="pull-right">
+        <ul class="quick-menu">
+          
+          <li class="quick-menu"><i class="far fa-question-circle"></i> HELP</li>
+          <li class="quick-menu"><i class="far fa-clock"></i> HOURS</li>
+          <li class="quick-menu"><i class="fas fa-search"></i> SEARCH</li>
+        
+        </ul>
+      </div>
+
+    </div>
     
     <!-- CSP Lib logo -->
     <div class="csp-lib-logo-home">
@@ -154,36 +293,198 @@
 
     </div> <!-- /csp-lib-logo-home -->
 
-    <!-- Navigation -->
-    <nav class="navbar yamm navbar-default" role="navigation">
+<!-- NAV HACKING START -->
+<div class="container"></div>
 
-      <div class="navbar-header">
-      
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          
-          <span class="sr-only">Toggle navigation</span>
+<div class="navbar navbar-default yamm">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse-grid"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-collapse-grid">
+      <ul id="main-menu" class="nav navbar-nav">
+        <!-- Grid 12 Menu -->
+        <li class="dropdown yamm-fw"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Find Resources <i class="fas fa-angle-down lt-gray"></i></a>
+          <ul class="dropdown-menu">
+            <li class="grid-demo">
+                <div class="row">
+                  <div class="col-sm-3">
+                    
+                    <div class="feature-box-header">Start Here</div>
+                  
+                  </div>
 
-          <span class="icon-bar"></span>
+                  <div class="col-sm-3">
+                    
+                    <div class="feature-box-header">Resources by Type</div>
 
-          <span class="icon-bar"></span>
+                    <ul class="list-group">
+                      <li class="list-group-item">Cras justo odio</li>
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                      <li class="list-group-item">Morbi leo risus</li>
+                      <li class="list-group-item">Porta ac consectetur ac</li>
+                      <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                  
+                  </div>
 
-          <span class="icon-bar"></span>
+                  <div class="col-sm-3">
+                    
+                    <div class="feature-box-header">For Instructors</div>
 
-        </button>
-  
-      </div>
+                    <ul class="list-group">
+                      <li class="list-group-item">Cras justo odio</li>
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                      <li class="list-group-item">Morbi leo risus</li>
+                      <li class="list-group-item">Porta ac consectetur ac</li>
+                      <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Find Resources</a></li>
-          <li><a href="#">Services</a></li>
-           <li><a href="#">About</a></li>
-           <li><a href="#">Help</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
+                  </div>
 
-    </nav>
+                  <div class="col-sm-3">
+                    
+                    <div class="feature-box-header">Digital & Special Collections</div>
+                    
+                    <ul class="list-group">
+                      <li class="list-group-item">Cras justo odio</li>
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                      <li class="list-group-item">Morbi leo risus</li>
+                      <li class="list-group-item">Porta ac consectetur ac</li>
+                      <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+
+                  </div>
+
+                </div>
+            </li>
+          </ul>
+        </li>
+        <!--With Offsets 
+        -->
+        <li class="dropdown yamm-fw"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Services <i class="fas fa-angle-down lt-gray"></i></a>
+          <ul class="dropdown-menu">
+            <li class="grid-demo">
+              <div class="row">
+
+                  <div class="col-md-2 col-md-offset-1">
+
+                    <div class="feature-box-header">Borrowing</div>
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+
+                  </div>
+                  
+                  <div class="col-md-2">
+
+                    <div class="feature-box-header">Research Assistance</div>
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+
+                  </div>
+                  
+                  <div class="col-md-2">
+
+                    <div class="feature-box-header">Library Instruction</div>
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+
+                  </div>
+
+                  <div class="col-md-2">
+
+                    <div class="feature-box-header">Tutoring & Writing</div>
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+
+                  </div>
+
+                  <div class="col-md-2">
+
+                    <div class="feature-box-header">Digital Scholarship</div>
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+
+                  </div>
+
+              </div>
+
+            </li>
+          </ul>
+        </li>
+        <!--Aside Menu 
+        -->
+        <li class="dropdown yamm-fw"><a class="dropdown-toggle" href="#" data-toggle="dropdown">About <i class="fas fa-angle-down lt-gray"></i></a>
+          <ul class="dropdown-menu">
+            <li class="grid-demo">
+              <div class="row">
+                <div class="col-sm-3"><br>
+                  <h3>3</h3><br>
+                </div>
+                <div class="col-sm-9"><br>
+                  <h3>9</h3><br>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!--Nesting Menu 
+        -->
+        <li class="dropdown yamm-fw"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Help <i class="fas fa-angle-down lt-gray"></i></a>
+          <ul class="dropdown-menu">
+            <li class="grid-demo">
+              <div class="row">
+                <div class="col-sm-12">12</div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">12
+                  <div class="row">
+                    <div class="col-sm-4">4</div>
+                    <div class="col-sm-4">4</div>
+                    <div class="col-sm-4">4</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+<!-- NAV HACKING END -->
 
     <!-- Search Box -->
     <div class="search">
@@ -194,22 +495,47 @@
 
       </div>
 
-        <form class="form-inline search-form">
-
-          <div class="input-group input-group-lg">
-
-            <input type="text" class="form-control input-lg">
-            <span class="input-group-btn">
-              <button class="btn btn-default csp-gold-bg" type="button">Search</button>
-            </span>
-
-          </div>
-
+      <script type="text/javascript">
+        function searchPrimo() {
+        document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " ");
+        document.forms["searchForm"].submit();
+        }
+        </script>
+        
+        <form id="simple" name="searchForm" method="get" target="_blank" action="https://clicsearch.csp.edu/primo-explore/search" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
+        <!-- Customizable Parameters -->
+        <input type="hidden" name="institution" value="01CLIC_CONCORDIA">
+        <input type="hidden" name="vid" value="CSP">
+        <input type="hidden" name="tab" value="default_tab">
+        <input type="hidden" name="search_scope" value="csp">
+        <input type="hidden" name="mode" value="basic">
+        <!-- CSP-specific exclusions -->
+        <input type="hidden" name="facet" value="rtype,exclude,newspaper_articles">
+        <input type="hidden" name="facet" value="rtype,exclude,reviews">
+        <input type="hidden" name="facet" value="rtype,exclude,dissertations">
+        <!-- Fixed parameters -->
+        <input type="hidden" name="displayMode" value="full">
+        <input type="hidden" name="bulkSize" value="10">
+        <input type="hidden" name="highlight" value="true">
+        <input type="hidden" name="dum" value="true">
+        <input type="hidden" name="query" id="primoQuery">
+        <input type="hidden" name="displayField" value="all">
+        <!-- Enable this if "Expand My Results" is enabled by default in Views Wizard -->
+        <div class="form-group">
+        <input type="hidden" name="pcAvailabiltyMode" value="true">
+        <div class="input-group input-group-lg">
+        <input class="form-control search-box" type="text" id="primoQueryTemp" value placeholder="Search for articles, book, and more">
+        <!-- Search Button -->
+        <span class="input-group-btn">
+        <input class="btn csp-gold-bg" id="go" title="Search" onclick="searchPrimo()" type="button" value="Search" alt="Search">
+        </span> <!-- /input-group-btn -->
+        </div> <!-- /input-group -->
+        </div> <!-- /form-group -->
         </form>
 
     </div>
 
-    <!-- Services -->
+    <!-- Services Overview -->
     <div class="container">
 
       <div class="page-header">
@@ -250,11 +576,15 @@
 
             <div class="feature-box-text">
 
-              <i class="fas fa-comment"></i> Chat with a Librarian 24x7<br />
-              <i class="fas fa-mobile"></i> Call us at 651-XXX-XXXX<br />
-              Email us<br />
-              Visit us...<br />
-              Schedule an appointment with a Librarian
+              <ul class="feature">
+
+                <li>Chat with a Librarian 24x7</li>
+                <li>Call us at 651-XXX-XXXX</li>
+                <li>Email us</li>
+                <li>Vist the Research Desk in person</li>
+                <li>Schedule an appointment</li>
+
+              </ul>
 
             </div>
 
@@ -328,27 +658,136 @@
 
       </div>
 
-      Services specifically for: 
-
     </div>
 
-    <!-- Events -->
-      <div class="row">
+    <!-- Services For -->
+    <div class="focus">
 
-        <div class="col-md-8">
+      <div class="container">
 
-          USING THE LIBRARY BUILDING
+        <div class="page-header">
+
+          Services For...
 
         </div>
 
-        <div class="col-md-4">
+        <div class="row center">
 
-            EVENTS
+          <div class="highlight-content__button">first year students</div>
+          <div class="highlight-content__button">undergraduate students</div>
+          <div class="highlight-content__button">graduate students</div>
+          <div class="highlight-content__button">faculty & instructors</div>
+          <div class="highlight-content__button">alumni & community</div>
 
-            <div id="api_upc_cid9880_iid4267"></div><script type="text/javascript" src="https://api3.libcal.com/api_events.php?iid=4267&m=upc&cid=9880&audience=&c=&d=&l=5&simple=ul_date&context=object&format=js"> </script>
+        </div>
+
+      </div>
+
+    </div>
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-8">
+
+              <div class="page-header-sub">Using the Library</div>
+
+              <div class="row">
+
+                <div class="col-md-3">
+                  
+                  <div class="focus-box">
+                    
+                    <i class="fas fa-chalkboard-teacher fa-5x"></i><br />
+                    Reserve a space
+                  
+                  </div>
+                
+                </div>
+
+                <div class="col-md-3">
+
+                  <div class="focus-box">
+                    
+                    <i class="fas fa-print fa-5x"></i><br />
+                    Printing
+                  
+                  </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                  <div class="focus-box">
+                    
+                      <i class="fas fa-book fa-5x"></i><br />
+                    Course Reserves
+                  
+                  </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                  <div class="focus-box">Tutoring</div>
+
+                </div>
+
+              </div>
+
+              <div class="row">
+
+                  <div class="col-md-3">
+                    
+                    <div class="focus-box">
+                      
+                      <i class="fas fa-chalkboard-teacher fa-5x"></i><br />
+                      Reserve a space
+                    
+                    </div>
+                  
+                  </div>
+  
+                  <div class="col-md-3">
+  
+                    <div class="focus-box">
+                      
+                      <i class="fas fa-print fa-5x"></i><br />
+                      Printing
+                    
+                    </div>
+  
+                  </div>
+  
+                  <div class="col-md-3">
+  
+                    <div class="focus-box">Option Three</div>
+  
+                  </div>
+  
+                  <div class="col-md-3">
+  
+                    <div class="focus-box">Option 4</div>
+  
+                  </div>
+  
+                </div>
+
+          </div>
+
+          <div class="col-md-4">
+
+              <div class="page-header-sub">Events</div>
+
+              <div id="api_upc_cid9880_iid4267"></div><script type="text/javascript" src="https://api3.libcal.com/api_events.php?iid=4267&m=upc&cid=9880&audience=&c=&d=&l=5&simple=ul_date&context=object&format=js"> </script>
+
+          </div>
 
         </div>
 
       </div>
 
   </body>
+
+</html>
