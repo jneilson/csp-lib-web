@@ -101,12 +101,12 @@
   display:block;
 }
 
-#main-menu li {
+#main-menu > li {
     display: inline-block;
     float: none;
     vertical-align: top;
 }
-#main-menu a{
+a.nav-option{
   display: block;
   padding: 10px;
   font-size: 1.7em;
@@ -184,10 +184,13 @@
 
       ul.feature {
         list-style: none;
+        padding: 0;
+        margin: 10px 0 0 0;
       }
 
-      .feature-box-contacts {
-
+      li.feature-item {
+        padding: 0 0 5px 0;
+        border-bottom:rgba(144, 144, 144, 0.5) 1px solid;
       }
 
       .page-header {
@@ -303,7 +306,7 @@
     <div class="navbar-collapse collapse" id="navbar-collapse-grid">
       <ul id="main-menu" class="nav navbar-nav">
         <!-- Grid 12 Menu -->
-        <li class="dropdown yamm-fw"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Find Resources <i class="fas fa-angle-down lt-gray"></i></a>
+        <li class="dropdown yamm-fw"><a class="dropdown-toggle nav-option" href="#" data-toggle="dropdown">Find Resources <i class="fas fa-angle-down lt-gray"></i></a>
           <ul class="dropdown-menu">
             <li class="grid-demo">
                 <div class="row">
@@ -361,22 +364,19 @@
         </li>
         <!--With Offsets 
         -->
-        <li class="dropdown yamm-fw"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Services <i class="fas fa-angle-down lt-gray"></i></a>
+        <li class="dropdown yamm"><a class="dropdown-toggle nav-option" href="#" data-toggle="dropdown">Services <i class="fas fa-angle-down lt-gray"></i></a>
           <ul class="dropdown-menu">
             <li class="grid-demo">
-              <div class="row">
 
                   <div class="col-md-2 col-md-offset-1">
 
                     <div class="feature-box-header">Borrowing</div>
                     
                     <ul class="list-group">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                      </ul>
+                      <a href="#" class="list-group-item list-group-item-action">Requesting & Renewing Library Materials</a>
+                      <a href="#" class="list-group-item list-group-item-action">Library Accounts</a>
+                      <a href="#" class="list-group-item list-group-item-action">Equipment</a>
+                    </ul>
 
                   </div>
                   
@@ -385,12 +385,12 @@
                     <div class="feature-box-header">Research Assistance</div>
                     
                     <ul class="list-group">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                      </ul>
+                      <a href="#" class="list-group-item list-group-item-action">Ask A Librarian</a>
+                      <a href="#" class="list-group-item list-group-item-action">Getting Started Guide</a>
+                      <a href="#" class="list-group-item list-group-item-action">Research Guides</a>
+                      <a href="#" class="list-group-item list-group-item-action">Research Tools</a>
+                      <a href="#" class="list-group-item list-group-item-action">Citations</a>
+                    </ul>
 
                   </div>
                   
@@ -399,12 +399,11 @@
                     <div class="feature-box-header">Library Instruction</div>
                     
                     <ul class="list-group">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                      </ul>
+                      <a href="#" class="list-group-item list-group-item-action">Instruction Services</a>
+                      <a href="#" class="list-group-item list-group-item-action">Request Library Instruction</a>
+                      <a href="#" class="list-group-item list-group-item-action">Online Tutorials</a>
+                      <a href="#" class="list-group-item list-group-item-action">Faculty Guides</a>
+                    </ul>
 
                   </div>
 
@@ -413,12 +412,12 @@
                     <div class="feature-box-header">Tutoring & Writing</div>
                     
                     <ul class="list-group">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                      </ul>
+                      <a href="#" class="list-group-item list-group-item-action">Tutoring Services</a>
+                      <a href="#" class="list-group-item list-group-item-action">Writing Center</a>
+                      <a href="#" class="list-group-item list-group-item-action">Schedule an Appointment</a>
+                      <a href="#" class="list-group-item list-group-item-action">Brainfuse Online Tutoring</a>
+                      <a href="#" class="list-group-item list-group-item-action">Citations</a>
+                    </ul>
 
                   </div>
 
@@ -427,23 +426,31 @@
                     <div class="feature-box-header">Digital Scholarship</div>
                     
                     <ul class="list-group">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                      </ul>
+                      <a href="#" class="list-group-item list-group-item-action">About Digital Scholarship</a>
+                      <a href="#" class="list-group-item list-group-item-action">Digital Commons@CSP</a>
+                      <a href="#" class="list-group-item list-group-item-action">Schedule an Appointment</a>
+                      <a href="#" class="list-group-item list-group-item-action">Open Access</a>
+                    </ul>
 
                   </div>
+                  
+                  <div class="col-md-12 col-md-offset-1">
 
-              </div>
+                    Services For... 
+                    <div class="highlight-content__button">first year students</div>
+                    <div class="highlight-content__button">undergraduate students</div>
+                    <div class="highlight-content__button">graduate students</div>
+                    <div class="highlight-content__button">faculty & instructors</div>
+                    <div class="highlight-content__button">alumni & community</div>
+
+                  </div>
 
             </li>
           </ul>
         </li>
         <!--Aside Menu 
         -->
-        <li class="dropdown yamm-fw"><a class="dropdown-toggle" href="#" data-toggle="dropdown">About <i class="fas fa-angle-down lt-gray"></i></a>
+        <li class="dropdown yamm-fw"><a class="dropdown-toggle nav-option" href="#" data-toggle="dropdown">About <i class="fas fa-angle-down lt-gray"></i></a>
           <ul class="dropdown-menu">
             <li class="grid-demo">
               <div class="row">
@@ -459,7 +466,7 @@
         </li>
         <!--Nesting Menu 
         -->
-        <li class="dropdown yamm-fw"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Help <i class="fas fa-angle-down lt-gray"></i></a>
+        <li class="dropdown yamm-fw"><a class="dropdown-toggle nav-option" href="#" data-toggle="dropdown">Help <i class="fas fa-angle-down lt-gray"></i></a>
           <ul class="dropdown-menu">
             <li class="grid-demo">
               <div class="row">
@@ -578,11 +585,11 @@
 
               <ul class="feature">
 
-                <li>Chat with a Librarian 24x7</li>
-                <li>Call us at 651-XXX-XXXX</li>
-                <li>Email us</li>
-                <li>Vist the Research Desk in person</li>
-                <li>Schedule an appointment</li>
+                <li class="feature-item">Chat with a Librarian 24x7</li>
+                <li class="feature-item">Call us at 651-XXX-XXXX</li>
+                <li class="feature-item">Email us</li>
+                <li class="feature-item">Vist the Research Desk in person</li>
+                <li class="feature-item">Schedule an appointment</li>
 
               </ul>
 
