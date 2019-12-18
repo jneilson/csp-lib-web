@@ -91,6 +91,10 @@
 
       li.quick-menu {
         display: inline;
+        font-family: "Oswald", sans-serif;
+        color: #393939;
+        margin: 0 10px 0 0;
+        font-size: 1.0em;
       }
       
       /* place CSP Lib logo on homepage */
@@ -157,7 +161,7 @@ a.nav-option{
 }
 .featurette .search {
     /*padding: 3%;*/
-    max-width: 980px; /*max width of search*/
+    max-width: 800px; /*max width of search*/
     margin: 0 auto;
 }
 .no-margin-top {
@@ -278,8 +282,31 @@ a.nav-option{
       padding: 8px;
     }
 
+    .focus-light {
+      border:rgba(144, 144, 144, 0.5) 1px solid;
+    }
+
+    .focus-light .row {
+      margin: 20px 0 20px 0;
+    }
+
     .footer {
+      font-family: "Oswald", serif;
+      font-size: 1.5em;
+      margin: 40px 0 0 0;
+      padding: 20px 0 20px 0;
       background-color:rgb(0, 48, 85);
+      color: #fff;
+    }
+
+    .footer a {
+      color: rgb(230, 178, 32);
+    }
+
+    .footer-header {
+        font-size: 1.3em;
+        font-family: "Oswald", serif;
+        margin: 0 0 10px 0;
     }
 
     /*!
@@ -332,7 +359,7 @@ a.nav-option{
     <!-- CSP Lib logo -->
     <div class="csp-lib-logo-home">
 
-      <img class="csp-lib-logo" src="csp-lib-logo.png" alt="CSP Library"></a>
+      <a href=""><img class="csp-lib-logo" src="csp-lib-logo.png" alt="CSP Library"></a>
 
     </div> <!-- /csp-lib-logo-home -->
 
@@ -487,14 +514,19 @@ a.nav-option{
 
                   </div>
                   
-                  <div class="col-md-11 col-md-offset-1">
+                  <div class="focus">
+                  
+                    <div class="col-md-11 col-md-offset-1">
 
-                    Services For... 
-                    <div class="highlight-content__button">first year students</div>
-                    <div class="highlight-content__button">undergraduate students</div>
-                    <div class="highlight-content__button">graduate students</div>
-                    <div class="highlight-content__button">faculty & instructors</div>
-                    <div class="highlight-content__button">alumni & community</div>
+                      <div class="feature-box-header">Services For...</div>
+                      
+                      <div class="highlight-content__button">first year students</div>
+                      <div class="highlight-content__button">undergraduate students</div>
+                      <div class="highlight-content__button">graduate students</div>
+                      <div class="highlight-content__button">faculty & instructors</div>
+                      <div class="highlight-content__button">alumni & community</div>
+
+                    </div>
 
                   </div>
 
@@ -507,19 +539,22 @@ a.nav-option{
           <ul class="dropdown-menu">
               <li class="grid-demo">
   
-                    <div class="col-md-2 col-md-offset-1">
-  
-                      <div class="feature-box-header">Start Here</div>
+                  <div class="col-md-3"></div>
+                    
+                  <div class="col-md-3">
                       
                       <ul class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action">Getting Started Guides</a>
-                        <a href="#" class="list-group-item list-group-item-action">Overview of Library Collections</a>
-                        <a href="#" class="list-group-item list-group-item-action">Subject-Specific Guides</a>
+                        <a href="#" class="list-group-item list-group-item-action">Welcome</a>
+                        <a href="#" class="list-group-item list-group-item-action">Contact Us</a>
+                        <a href="#" class="list-group-item list-group-item-action">Staff</a>
+                        <a href="#" class="list-group-item list-group-item-action">Facts & Figures</a>
+                        <a href="#" class="list-group-item list-group-item-action">News & Events</a>
+                        <a href="#" class="list-group-item list-group-item-action">Policies</a>
                       </ul>
   
                     </div>
                     
-                    <div class="col-md-2">
+                    <div class="col-md-3">
   
                       <div class="feature-box-header">Resources by Type</div>
                       
@@ -533,41 +568,8 @@ a.nav-option{
                       </ul>
   
                     </div>
-                    
-                    <div class="col-md-2">
-  
-                      <div class="feature-box-header">Resources by Subject</div>
-                      
-                      <ul class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action"></a>
-                        <a href="#" class="list-group-item list-group-item-action"></a>
-                        <a href="#" class="list-group-item list-group-item-action"></a>
-                        <a href="#" class="list-group-item list-group-item-action"></a>
-                      </ul>
-  
-                    </div>
-  
-                    <div class="col-md-2">
-  
-                      <div class="feature-box-header">For Instructors</div>
-                      
-                      <ul class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action">Using Library Resources in Your Courses</a>
-                        <a href="#" class="list-group-item list-group-item-action">Open Resources</a>
-                      </ul>
-  
-                    </div>
-  
-                    <div class="col-md-2">
-  
-                      <div class="feature-box-header">Digital & Special Collections</div>
-                      
-                      <ul class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action">Digital Collections</a>
-                        <a href="#" class="list-group-item list-group-item-action">Archives & Special Collections</a>
-                      </ul>
-  
-                    </div>
+
+                    <div class="col-md-3"></div>
   
               </li>
             </ul>
@@ -577,18 +579,39 @@ a.nav-option{
         <li class="dropdown yamm-fw"><a class="dropdown-toggle nav-option" href="#" data-toggle="dropdown">Help <i class="fas fa-angle-down lt-gray"></i></a>
           <ul class="dropdown-menu">
             <li class="grid-demo">
-              <div class="row">
-                <div class="col-sm-12">12</div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">12
-                  <div class="row">
-                    <div class="col-sm-4">4</div>
-                    <div class="col-sm-4">4</div>
-                    <div class="col-sm-4">4</div>
+
+                <div class="col-md-3"></div>
+                    
+                <div class="col-md-3">
+                    
+                    <div class="feature-box-header">Ask a Librarian</div>
+                    
+                    <ul class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action">Chat 24x7</a>
+                      <a href="#" class="list-group-item list-group-item-action">Call Us</a>
+                      <a href="#" class="list-group-item list-group-item-action">Email</a>
+                      <a href="#" class="list-group-item list-group-item-action">Visit</a>
+                    </ul>
+
                   </div>
-                </div>
-              </div>
+                  
+                  <div class="col-md-3">
+
+                    <div class="feature-box-header">Help With...</div>
+                    
+                    <ul class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action">Tutoring</a>
+                      <a href="#" class="list-group-item list-group-item-action">Writing</a>
+                      <a href="#" class="list-group-item list-group-item-action">Technology Issues</a>
+                      <a href="#" class="list-group-item list-group-item-action">Printing/Copying/Scanning</a>
+                      <a href="#" class="list-group-item list-group-item-action">Blackboard</a>
+                      <a href="#" class="list-group-item list-group-item-action">Citing Sources</a>
+                    </ul>
+
+                  </div>
+
+                  <div class="col-md-3"></div>
+
             </li>
           </ul>
         </li>
@@ -614,7 +637,7 @@ a.nav-option{
           <div class="featurette-inner text-center">
              <form role="form" class="search">
                 <div class="input-group input-group-lg">
-                   <input type="search" placeholder="search" class="form-control">
+                   <input type="search" placeholder="Search for articles, books, and more..." class="form-control">
                    <span class="input-group-btn">
                    <button class="btn csp-gold-bg" type="button">Search</button>
                    </span>
@@ -735,7 +758,7 @@ a.nav-option{
   
               <div class="feature-box-intro-text">
   
-                Technology assistance for students, faculty, and staff
+                Help writing and formatting papers
   
               </div>
   
@@ -835,13 +858,13 @@ a.nav-option{
 
         <div class="row">
 
-          <div class="col-md-8">
+          <div class="col-md-8 focus-light">
 
               <div class="page-header-sub">Using the Library</div>
 
               <div class="row">
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                   
                   <div class="focus-box">
                     
@@ -852,18 +875,18 @@ a.nav-option{
                 
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
 
                   <div class="focus-box">
                     
                     <i class="fas fa-print fa-5x"></i><br />
-                    Printing
+                    Printing/Copying/Scanning
                   
                   </div>
 
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
 
                   <div class="focus-box">
                     
@@ -874,47 +897,39 @@ a.nav-option{
 
                 </div>
 
-                <div class="col-md-3">
-
-                  <div class="focus-box">Tutoring</div>
-
-                </div>
-
               </div>
 
               <div class="row">
 
-                  <div class="col-md-3">
+                  <div class="col-md-4">
                     
                     <div class="focus-box">
                       
-                      <i class="fas fa-chalkboard-teacher fa-5x"></i><br />
-                      Reserve a space
-                    
+                      <i class="fas fa-bowling-ball fa-5x"></i><br />
+                      Tutoring
                     </div>
                   
                   </div>
   
-                  <div class="col-md-3">
+                  <div class="col-md-4">
   
                     <div class="focus-box">
                       
-                      <i class="fas fa-print fa-5x"></i><br />
-                      Printing
+                      <i class="fas fa-desktop fa-5x"></i><br />
+                      Computers & Technology
                     
                     </div>
   
                   </div>
   
-                  <div class="col-md-3">
+                  <div class="col-md-4">
   
-                    <div class="focus-box">Option Three</div>
-  
-                  </div>
-  
-                  <div class="col-md-3">
-  
-                    <div class="focus-box">Option 4</div>
+                    <div class="focus-box">
+                      
+                        <i class="fas fa-dumpster fa-5x"></i><br />
+                      Collections
+                    
+                    </div>
   
                   </div>
   
@@ -936,25 +951,46 @@ a.nav-option{
 
       <div class="footer">
 
-        <div class="contain">
+        <div class="container">
 
           <div class="row">
 
-            <div class="col-md-4">
+            <div class="col-md-4 center">
 
-              <h3>CONNECT WITH US</h3>
+              <div class="footer-header">CONNECT WITH US</div>
 
-            </div>
-
-            <div class="col-md-4">
-
-
+              <i class="fab fa-facebook-square fa-4x"></i>
+              <i class="fab fa-twitter-square fa-4x"></i>
 
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 center">
 
-              <h3>CONTACT US</h3>
+                <a href=""><img class="csp-lib-logo" src="csp-lib-logo-white.png" alt="CSP Library"></a>
+
+                <br /><br />
+
+                <a href="">FIND RESOURCES</a><br />
+                <a href="">SERVICES</a><br />
+                <a href="">ABOUT</a><br />
+                <a href="">HELP</a>
+
+            </div>
+
+            <div class="col-md-4 center">
+
+              <div class="footer-header">CONTACT US</div>
+
+              <address>
+                Library Services<br />
+                Concordia University, Saint Paul<br />
+                1282 Concordia Avenue<br />
+                Saint Paul, MN 55104
+              </address>
+
+              <a href="">library@csp.edu</a><br /><br />
+
+              <a href="">(651) 641-8237</a>
 
             </div>
 
