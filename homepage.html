@@ -51,6 +51,15 @@
           text-align: center;
         }
 
+        a {
+          color:rgb(0, 48, 85);
+          text-decoration: none;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+
       /* LIBGUIDES SHENANIGANS - HOMEPAGE ONLY! */
       
         h3.s-lc-ea-h3 {
@@ -120,7 +129,8 @@ a.nav-option{
   border: none;
 }
 
-      .search {
+
+      .search-section {
         background-color: #0A3255;
         padding: 75px 0 75px 0;
         text-align: center;
@@ -136,10 +146,32 @@ a.nav-option{
         margin: 0 0 20px 0;
       }
 
-      .form-group {
-        width: 550px;
-        float:  none;
-      }
+      .featurette {
+    display: table;
+    width: 100%;
+    /*height: 30%;*/ /* set a pixel height and then remove the body,html height */
+}
+.featurette-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.featurette .search {
+    /*padding: 3%;*/
+    max-width: 980px; /*max width of search*/
+    margin: 0 auto;
+}
+.no-margin-top {
+    margin-top: 0
+}
+
+
+/* ------ form-control-lg */
+.form-control-lg {
+    min-height: 46px;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: normal;
+}
 
       .feature-box {
         box-shadow: 4px 7px 15px -1px rgba(144, 144, 144, 0.5);
@@ -147,7 +179,7 @@ a.nav-option{
         display: block;
         border-left: solid 7px rgb(230, 178, 32);
         padding: 5px 5px 5px 8px;
-        height: 350px;
+        height: 400px;
       }
 
       .feature-box-header {
@@ -162,7 +194,7 @@ a.nav-option{
         font-size: 1.3em;
         font-family: "Merriweather serif", serif;
         font-style: italic;
-        margin: 0 0 10px 0;
+        margin: 0 0 20px 0;
       }
 
       .feature-box-hours {
@@ -180,6 +212,7 @@ a.nav-option{
         color: #393939;
         font-family: "Oswald", sans-serif;
         font-size: 1.3em;
+        margin: 0 0 20px 0;
       }
 
       ul.feature {
@@ -190,7 +223,10 @@ a.nav-option{
 
       li.feature-item {
         padding: 0 0 5px 0;
-        border-bottom:rgba(144, 144, 144, 0.5) 1px solid;
+        font-family: "Oswald", sans-serif;
+        font-size: 120%;
+        font-weight: 100;
+        line-height: 1.75em;
       }
 
       .page-header {
@@ -230,16 +266,20 @@ a.nav-option{
       color: #ffffff; }
 
     .focus {
-      background-color: #e0e0e0;
-      margin: 30px 0 30px 0;
+      /*background-color: #e0e0e0;*/
+      margin: 40px 0 40px 0;
       padding: 15px 0 15px 0;
     }
 
     .focus-box {
-      border: 1px solid #666;
+      /*border: 1px solid #666;*/
       border-radius: 7px;
       text-align: center;
       padding: 8px;
+    }
+
+    .footer {
+      background-color:rgb(0, 48, 85);
     }
 
     /*!
@@ -308,63 +348,76 @@ a.nav-option{
         <!-- Grid 12 Menu -->
         <li class="dropdown yamm-fw"><a class="dropdown-toggle nav-option" href="#" data-toggle="dropdown">Find Resources <i class="fas fa-angle-down lt-gray"></i></a>
           <ul class="dropdown-menu">
-            <li class="grid-demo">
-                <div class="row">
-                  <div class="col-sm-3">
+              <li class="grid-demo">
+  
+                    <div class="col-md-2 col-md-offset-1">
+  
+                      <div class="feature-box-header">Start Here</div>
+                      
+                      <ul class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Getting Started Guides</a>
+                        <a href="#" class="list-group-item list-group-item-action">Overview of Library Collections</a>
+                        <a href="#" class="list-group-item list-group-item-action">Subject-Specific Guides</a>
+                      </ul>
+  
+                    </div>
                     
-                    <div class="feature-box-header">Start Here</div>
-                  
-                  </div>
-
-                  <div class="col-sm-3">
+                    <div class="col-md-2">
+  
+                      <div class="feature-box-header">Resources by Type</div>
+                      
+                      <ul class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Databases</a>
+                        <a href="#" class="list-group-item list-group-item-action">Articles</a>
+                        <a href="#" class="list-group-item list-group-item-action">Journals & Magazines</a>
+                        <a href="#" class="list-group-item list-group-item-action">Books & eBooks</a>
+                        <a href="#" class="list-group-item list-group-item-action">Streaming Videos</a>
+                        <a href="#" class="list-group-item list-group-item-action">Course Reserves</a>
+                      </ul>
+  
+                    </div>
                     
-                    <div class="feature-box-header">Resources by Type</div>
-
-                    <ul class="list-group">
-                      <li class="list-group-item">Cras justo odio</li>
-                      <li class="list-group-item">Dapibus ac facilisis in</li>
-                      <li class="list-group-item">Morbi leo risus</li>
-                      <li class="list-group-item">Porta ac consectetur ac</li>
-                      <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                  
-                  </div>
-
-                  <div class="col-sm-3">
-                    
-                    <div class="feature-box-header">For Instructors</div>
-
-                    <ul class="list-group">
-                      <li class="list-group-item">Cras justo odio</li>
-                      <li class="list-group-item">Dapibus ac facilisis in</li>
-                      <li class="list-group-item">Morbi leo risus</li>
-                      <li class="list-group-item">Porta ac consectetur ac</li>
-                      <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-
-                  </div>
-
-                  <div class="col-sm-3">
-                    
-                    <div class="feature-box-header">Digital & Special Collections</div>
-                    
-                    <ul class="list-group">
-                      <li class="list-group-item">Cras justo odio</li>
-                      <li class="list-group-item">Dapibus ac facilisis in</li>
-                      <li class="list-group-item">Morbi leo risus</li>
-                      <li class="list-group-item">Porta ac consectetur ac</li>
-                      <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-
-                  </div>
-
-                </div>
-            </li>
-          </ul>
+                    <div class="col-md-2">
+  
+                      <div class="feature-box-header">Resources by Subject</div>
+                      
+                      <ul class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action"></a>
+                        <a href="#" class="list-group-item list-group-item-action"></a>
+                        <a href="#" class="list-group-item list-group-item-action"></a>
+                        <a href="#" class="list-group-item list-group-item-action"></a>
+                      </ul>
+  
+                    </div>
+  
+                    <div class="col-md-2">
+  
+                      <div class="feature-box-header">For Instructors</div>
+                      
+                      <ul class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Using Library Resources in Your Courses</a>
+                        <a href="#" class="list-group-item list-group-item-action">Open Resources</a>
+                      </ul>
+  
+                    </div>
+  
+                    <div class="col-md-2">
+  
+                      <div class="feature-box-header">Digital & Special Collections</div>
+                      
+                      <ul class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Digital Collections</a>
+                        <a href="#" class="list-group-item list-group-item-action">Archives & Special Collections</a>
+                      </ul>
+  
+                    </div>
+  
+              </li>
+            </ul>
         </li>
         <!--With Offsets 
         -->
-        <li class="dropdown yamm"><a class="dropdown-toggle nav-option" href="#" data-toggle="dropdown">Services <i class="fas fa-angle-down lt-gray"></i></a>
+        <li class="dropdown yamm-fw"><a class="dropdown-toggle nav-option" href="#" data-toggle="dropdown">Services <i class="fas fa-angle-down lt-gray"></i></a>
           <ul class="dropdown-menu">
             <li class="grid-demo">
 
@@ -434,7 +487,7 @@ a.nav-option{
 
                   </div>
                   
-                  <div class="col-md-12 col-md-offset-1">
+                  <div class="col-md-11 col-md-offset-1">
 
                     Services For... 
                     <div class="highlight-content__button">first year students</div>
@@ -452,17 +505,72 @@ a.nav-option{
         -->
         <li class="dropdown yamm-fw"><a class="dropdown-toggle nav-option" href="#" data-toggle="dropdown">About <i class="fas fa-angle-down lt-gray"></i></a>
           <ul class="dropdown-menu">
-            <li class="grid-demo">
-              <div class="row">
-                <div class="col-sm-3"><br>
-                  <h3>3</h3><br>
-                </div>
-                <div class="col-sm-9"><br>
-                  <h3>9</h3><br>
-                </div>
-              </div>
-            </li>
-          </ul>
+              <li class="grid-demo">
+  
+                    <div class="col-md-2 col-md-offset-1">
+  
+                      <div class="feature-box-header">Start Here</div>
+                      
+                      <ul class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Getting Started Guides</a>
+                        <a href="#" class="list-group-item list-group-item-action">Overview of Library Collections</a>
+                        <a href="#" class="list-group-item list-group-item-action">Subject-Specific Guides</a>
+                      </ul>
+  
+                    </div>
+                    
+                    <div class="col-md-2">
+  
+                      <div class="feature-box-header">Resources by Type</div>
+                      
+                      <ul class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Databases</a>
+                        <a href="#" class="list-group-item list-group-item-action">Articles</a>
+                        <a href="#" class="list-group-item list-group-item-action">Journals & Magazines</a>
+                        <a href="#" class="list-group-item list-group-item-action">Books & eBooks</a>
+                        <a href="#" class="list-group-item list-group-item-action">Streaming Videos</a>
+                        <a href="#" class="list-group-item list-group-item-action">Course Reserves</a>
+                      </ul>
+  
+                    </div>
+                    
+                    <div class="col-md-2">
+  
+                      <div class="feature-box-header">Resources by Subject</div>
+                      
+                      <ul class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action"></a>
+                        <a href="#" class="list-group-item list-group-item-action"></a>
+                        <a href="#" class="list-group-item list-group-item-action"></a>
+                        <a href="#" class="list-group-item list-group-item-action"></a>
+                      </ul>
+  
+                    </div>
+  
+                    <div class="col-md-2">
+  
+                      <div class="feature-box-header">For Instructors</div>
+                      
+                      <ul class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Using Library Resources in Your Courses</a>
+                        <a href="#" class="list-group-item list-group-item-action">Open Resources</a>
+                      </ul>
+  
+                    </div>
+  
+                    <div class="col-md-2">
+  
+                      <div class="feature-box-header">Digital & Special Collections</div>
+                      
+                      <ul class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Digital Collections</a>
+                        <a href="#" class="list-group-item list-group-item-action">Archives & Special Collections</a>
+                      </ul>
+  
+                    </div>
+  
+              </li>
+            </ul>
         </li>
         <!--Nesting Menu 
         -->
@@ -494,7 +602,7 @@ a.nav-option{
 <!-- NAV HACKING END -->
 
     <!-- Search Box -->
-    <div class="search">
+    <div class="search-section">
 
       <div class="search-header">
 
@@ -502,43 +610,23 @@ a.nav-option{
 
       </div>
 
-      <script type="text/javascript">
-        function searchPrimo() {
-        document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " ");
-        document.forms["searchForm"].submit();
-        }
-        </script>
-        
-        <form id="simple" name="searchForm" method="get" target="_blank" action="https://clicsearch.csp.edu/primo-explore/search" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
-        <!-- Customizable Parameters -->
-        <input type="hidden" name="institution" value="01CLIC_CONCORDIA">
-        <input type="hidden" name="vid" value="CSP">
-        <input type="hidden" name="tab" value="default_tab">
-        <input type="hidden" name="search_scope" value="csp">
-        <input type="hidden" name="mode" value="basic">
-        <!-- CSP-specific exclusions -->
-        <input type="hidden" name="facet" value="rtype,exclude,newspaper_articles">
-        <input type="hidden" name="facet" value="rtype,exclude,reviews">
-        <input type="hidden" name="facet" value="rtype,exclude,dissertations">
-        <!-- Fixed parameters -->
-        <input type="hidden" name="displayMode" value="full">
-        <input type="hidden" name="bulkSize" value="10">
-        <input type="hidden" name="highlight" value="true">
-        <input type="hidden" name="dum" value="true">
-        <input type="hidden" name="query" id="primoQuery">
-        <input type="hidden" name="displayField" value="all">
-        <!-- Enable this if "Expand My Results" is enabled by default in Views Wizard -->
-        <div class="form-group">
-        <input type="hidden" name="pcAvailabiltyMode" value="true">
-        <div class="input-group input-group-lg">
-        <input class="form-control search-box" type="text" id="primoQueryTemp" value placeholder="Search for articles, book, and more">
-        <!-- Search Button -->
-        <span class="input-group-btn">
-        <input class="btn csp-gold-bg" id="go" title="Search" onclick="searchPrimo()" type="button" value="Search" alt="Search">
-        </span> <!-- /input-group-btn -->
-        </div> <!-- /input-group -->
-        </div> <!-- /form-group -->
-        </form>
+      <div class="featurette">
+          <div class="featurette-inner text-center">
+             <form role="form" class="search">
+                <div class="input-group input-group-lg">
+                   <input type="search" placeholder="search" class="form-control">
+                   <span class="input-group-btn">
+                   <button class="btn csp-gold-bg" type="button">Search</button>
+                   </span>
+                </div>
+                <!-- /input-group -->
+             </form>
+             <!-- /.max-width on this form -->
+             
+          </div>
+          <!-- /.featurette-inner (display:table-cell) -->
+          
+       </div>
 
     </div>
 
@@ -553,7 +641,7 @@ a.nav-option{
 
       <div class="row">
 
-        <div class="col-md-4">
+        <div class="col-md-3">
 
           <div class="feature-box">
 
@@ -581,37 +669,33 @@ a.nav-option{
 
             </div>
 
-            <div class="feature-box-text">
+            <ul class="feature">
 
-              <ul class="feature">
+              <li class="feature-item"><a href="#">Chat with a Librarian 24x7</a></li>
+              <li class="feature-item"><a href="#">Call us at 651-XXX-XXXX</a></li>
+              <li class="feature-item"><a href="#">Email us</a></li>
+              <li class="feature-item"><a href="#">Vist the Research Desk in person</a></li>
+              <li class="feature-item"><a href="#">Schedule an appointment</a></li>
 
-                <li class="feature-item">Chat with a Librarian 24x7</li>
-                <li class="feature-item">Call us at 651-XXX-XXXX</li>
-                <li class="feature-item">Email us</li>
-                <li class="feature-item">Vist the Research Desk in person</li>
-                <li class="feature-item">Schedule an appointment</li>
-
-              </ul>
-
-            </div>
+            </ul>
 
           </div>
 
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-3">
 
           <div class="feature-box">
           
             <div class="feature-box-header">
 
-              TUTORING & WRITING
+              TUTORING
 
             </div>
 
             <div class="feature-box-intro-text">
 
-              Subject-specific tutoring and help drafting and revising papers
+              Subject-specific tutoring to help you succeed in your classes
 
             </div>
 
@@ -627,11 +711,59 @@ a.nav-option{
 
             </div>
 
+            <ul class="feature">
+
+                <li class="feature-item"><a href="#">Schedule a tutoring sessions</a></li>
+                <li class="feature-item"><a href="#">Brainfuse online tutoring</a></li>
+                <li class="feature-item"><a href="#">Walk-in services</a></li>
+
+            </ul>
+
           </div>
 
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-3">
+
+            <div class="feature-box">
+  
+              <div class="feature-box-header">
+  
+                WRITING CENTER
+  
+              </div>
+  
+              <div class="feature-box-intro-text">
+  
+                Technology assistance for students, faculty, and staff
+  
+              </div>
+  
+              <div class="feature-box-sub-header">
+  
+                Today's Hours:
+  
+              </div>
+  
+              <div class="feature-box-text">
+  
+               8:00 am - 8:00 pm 
+  
+              </div>
+
+              <ul class="feature">
+
+                  <li class="feature-item"><a href="#">Schedule a writing sessions</a></li>
+                  <li class="feature-item"><a href="#">Brainfuse online writing help</a></li>
+                  <li class="feature-item"><a href="#">Walk-in services</a></li>
+  
+              </ul>
+  
+            </div>
+  
+          </div>
+
+        <div class="col-md-3">
 
           <div class="feature-box">
 
@@ -658,6 +790,13 @@ a.nav-option{
              8:00 am - 8:00 pm 
 
             </div>
+
+            <ul class="feature">
+
+                <li class="feature-item"><a href="#">Email the Help Desk</a></li>
+                <li class="feature-item"><a href="#">Walk-in services</a></li>
+
+            </ul>
 
           </div>
 
@@ -788,6 +927,36 @@ a.nav-option{
               <div class="page-header-sub">Events</div>
 
               <div id="api_upc_cid9880_iid4267"></div><script type="text/javascript" src="https://api3.libcal.com/api_events.php?iid=4267&m=upc&cid=9880&audience=&c=&d=&l=5&simple=ul_date&context=object&format=js"> </script>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer">
+
+        <div class="contain">
+
+          <div class="row">
+
+            <div class="col-md-4">
+
+              <h3>CONNECT WITH US</h3>
+
+            </div>
+
+            <div class="col-md-4">
+
+
+
+            </div>
+
+            <div class="col-md-4">
+
+              <h3>CONTACT US</h3>
+
+            </div>
 
           </div>
 
