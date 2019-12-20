@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>csp-lib-web-homepage</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/8c36e38b79.js" crossorigin="anonymous"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+      /* fonts */
+      @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700&display=swap");
+      @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+      @import url("https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy&display=swap");
+
+      .navbar-logo {
+        width: 85px;
+      }
+
+      ul.quick-menu {
+        list-style-type: none;
+  margin: 0;
+  padding: 0;
+      }
+
+      li.quick-menu {
+        display: inline;
+        font-family: "Oswald", sans-serif;
+        color: #393939;
+        margin: 0 10px 0 0;
+        font-size: 1.0em;
+      }
+
+      .section-header {
+        border-top:#dadce0 1px solid;
+        border-bottom:#dadce0 1px solid;
+        font-family: "Oswald", sans-serif;
+        color: #545454;
+        font-size: 2.0em;
+        padding: 10px 15px 10px 15px;
+        box-shadow: 0 2px 6px 0 rgba(0,0,0,.12),inset 0 -1px 0 0 #dadce0;
+      }
+
+      .guide-header {
+        background-color: #0A3255;
+        padding: 25px 0 25px 0;
+        margin: 0 0 25px 0;
+      }
+    
+      /*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ *
+ * @geedmo - Licensed under the MIT license
+ */
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+.yamm .container {
+  position: relative;
+}
+.yamm .dropdown-menu {
+  left: auto;
+}
+.yamm .yamm-content {
+  padding: 20px 30px;
+}
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+
+h1.guide-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 3.5em;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+.guide-description {
+
+  font-size: 1.3em;
+    font-family: "Merriweather serif", serif;
+    font-style: italic;
+  color: #999;
+
+}
+
+h2.page-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.75em;
+  color: #0A3255;
+}
+
+h3.box-title {
+  font-size: 2.0em;
+  border-bottom: 1px solid #dadce0;
+}
+
+.feature-box {
+        box-shadow: 4px 7px 15px -1px rgba(144, 144, 144, 0.5);
+        box-sizing: border-box;
+        display: block;
+        border-left: solid 7px rgb(230, 178, 32);
+        padding: 5px 5px 5px 8px;
+      }
+
+      .feature-box-header {
+        color: rgb(0, 48, 85);
+        font-size: 2.0em;
+        font-family: "Oswald", serif;
+        margin: 0 0 10px 0;
+      }
+
+      .feature-box-intro-text {
+        color: 333;
+        font-size: 1.3em;
+        font-family: "Merriweather serif", serif;
+        font-style: italic;
+        margin: 0 0 20px 0;
+      }
+
+      .feature-box-hours {
+        background-color: #999;
+      }
+
+      .feature-box-sub-header {
+        color: #393939;
+        font-family: "Oswald", sans-serif;
+        font-size: 1.5em;
+        font-weight: 700;
+      }
+
+      .feature-box-text {
+        color: #393939;
+        font-family: "Oswald", sans-serif;
+        font-size: 1.3em;
+        margin: 0 0 20px 0;
+        font-weight: 200;
+      }
+
+      ul.feature {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0 0;
+      }
+
+      li.feature-item {
+        padding: 0 0 5px 0;
+        font-family: "Oswald", sans-serif;
+        font-size: 120%;
+        font-weight: 100;
+        line-height: 1.75em;
+      }
+
+    .navbar {
+      margin: 10px 0 10px 0;
+    }
+    
+    ul.navbar-nav {
+      /*margin: 10px;*/
+      margin: 0 0 0 20px;
+    }
+
+    a.nav-option {
+      color: #393939;
+      font-family: "Oswald", sans-serif;
+      font-size: 1.25em;
+    }
+
+    
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-csplib">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <img class="navbar-logo" src="csp-lib-logo.png">
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              
+              <!-- FIND RESOURCES MENU -->
+              <li class="dropdown yamm-fw"><a class="dropdown-toggle nav-option" href="#" data-toggle="dropdown">Find Resources <i class="fas fa-angle-down lt-gray"></i></a>
+                <ul class="dropdown-menu">
+                    <li class="grid-demo">
+        
+                          <div class="col-md-2 col-md-offset-1">
+        
+                            <div class="feature-box-header">Start Here</div>
+                            
+                            <ul class="list-group">
+                              <a href="#" class="list-group-item list-group-item-action">Getting Started Guides</a>
+                              <a href="#" class="list-group-item list-group-item-action">Overview of Library Collections</a>
+                              <a href="#" class="list-group-item list-group-item-action">Subject-Specific Guides</a>
+                            </ul>
+        
+                          </div>
+                          
+                          <div class="col-md-2">
+        
+                            <div class="feature-box-header">Resources by Type</div>
+                            
+                            <ul class="list-group">
+                              <a href="#" class="list-group-item list-group-item-action">Databases</a>
+                              <a href="#" class="list-group-item list-group-item-action">Articles</a>
+                              <a href="#" class="list-group-item list-group-item-action">Journals & Magazines</a>
+                              <a href="#" class="list-group-item list-group-item-action">Books & eBooks</a>
+                              <a href="#" class="list-group-item list-group-item-action">Streaming Videos</a>
+                              <a href="#" class="list-group-item list-group-item-action">Course Reserves</a>
+                            </ul>
+        
+                          </div>
+                          
+                          <div class="col-md-2">
+        
+                            <div class="feature-box-header">Resources by Subject</div>
+                            
+                            <ul class="list-group">
+                              <a href="#" class="list-group-item list-group-item-action"></a>
+                              <a href="#" class="list-group-item list-group-item-action"></a>
+                              <a href="#" class="list-group-item list-group-item-action"></a>
+                              <a href="#" class="list-group-item list-group-item-action"></a>
+                            </ul>
+        
+                          </div>
+        
+                          <div class="col-md-2">
+        
+                            <div class="feature-box-header">For Instructors</div>
+                            
+                            <ul class="list-group">
+                              <a href="#" class="list-group-item list-group-item-action">Using Library Resources in Your Courses</a>
+                              <a href="#" class="list-group-item list-group-item-action">Open Resources</a>
+                            </ul>
+        
+                          </div>
+        
+                          <div class="col-md-2">
+        
+                            <div class="feature-box-header">Digital & Special Collections</div>
+                            
+                            <ul class="list-group">
+                              <a href="#" class="list-group-item list-group-item-action">Digital Collections</a>
+                              <a href="#" class="list-group-item list-group-item-action">Archives & Special Collections</a>
+                            </ul>
+        
+                          </div>
+        
+                    </li>
+                  </ul>
+              </li>
+
+              <!-- SERVICES MENU -->
+              <li class="dropdown yamm-fw"><a class="dropdown-toggle nav-option" href="#" data-toggle="dropdown">Services <i class="fas fa-angle-down lt-gray"></i></a>
+                <ul class="dropdown-menu">
+                  <li class="grid-demo">
+      
+                        <div class="col-md-2 col-md-offset-1">
+      
+                          <div class="feature-box-header">Borrowing</div>
+                          
+                          <ul class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Requesting & Renewing Library Materials</a>
+                            <a href="#" class="list-group-item list-group-item-action">Library Accounts</a>
+                            <a href="#" class="list-group-item list-group-item-action">Equipment</a>
+                          </ul>
+      
+                        </div>
+                        
+                        <div class="col-md-2">
+      
+                          <div class="feature-box-header">Research Assistance</div>
+                          
+                          <ul class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Ask A Librarian</a>
+                            <a href="#" class="list-group-item list-group-item-action">Getting Started Guide</a>
+                            <a href="#" class="list-group-item list-group-item-action">Research Guides</a>
+                            <a href="#" class="list-group-item list-group-item-action">Research Tools</a>
+                            <a href="#" class="list-group-item list-group-item-action">Citations</a>
+                          </ul>
+      
+                        </div>
+                        
+                        <div class="col-md-2">
+      
+                          <div class="feature-box-header">Library Instruction</div>
+                          
+                          <ul class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Instruction Services</a>
+                            <a href="#" class="list-group-item list-group-item-action">Request Library Instruction</a>
+                            <a href="#" class="list-group-item list-group-item-action">Online Tutorials</a>
+                            <a href="#" class="list-group-item list-group-item-action">Faculty Guides</a>
+                          </ul>
+      
+                        </div>
+      
+                        <div class="col-md-2">
+      
+                          <div class="feature-box-header">Tutoring & Writing</div>
+                          
+                          <ul class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Tutoring Services</a>
+                            <a href="#" class="list-group-item list-group-item-action">Writing Center</a>
+                            <a href="#" class="list-group-item list-group-item-action">Schedule an Appointment</a>
+                            <a href="#" class="list-group-item list-group-item-action">Brainfuse Online Tutoring</a>
+                            <a href="#" class="list-group-item list-group-item-action">Citations</a>
+                          </ul>
+      
+                        </div>
+      
+                        <div class="col-md-2">
+      
+                          <div class="feature-box-header">Digital Scholarship</div>
+                          
+                          <ul class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">About Digital Scholarship</a>
+                            <a href="#" class="list-group-item list-group-item-action">Digital Commons@CSP</a>
+                            <a href="#" class="list-group-item list-group-item-action">Schedule an Appointment</a>
+                            <a href="#" class="list-group-item list-group-item-action">Open Access</a>
+                          </ul>
+      
+                        </div>
+                        
+                        <div class="focus">
+                        
+                          <div class="col-md-11 col-md-offset-1">
+      
+                            <div class="feature-box-header">Services For...</div>
+                            
+                            <div class="highlight-content__button">first year students</div>
+                            <div class="highlight-content__button">undergraduate students</div>
+                            <div class="highlight-content__button">graduate students</div>
+                            <div class="highlight-content__button">faculty & instructors</div>
+                            <div class="highlight-content__button">alumni & community</div>
+      
+                          </div>
+      
+                        </div>
+      
+                  </li>
+                </ul>
+              </li>
+
+              <!-- ABOUT MENU -->
+              <li class="dropdown yamm-fw"><a class="dropdown-toggle nav-option" href="#" data-toggle="dropdown">About <i class="fas fa-angle-down lt-gray"></i></a></li>
+              
+              <!-- HELP MENU -->
+              <li class="dropdown yamm-fw"><a class="dropdown-toggle nav-option" href="#" data-toggle="dropdown">Help <i class="fas fa-angle-down lt-gray"></i></a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <ul class="quick-menu">
+          
+                    <li class="quick-menu"><a href="#" data-toggle="modal" data-target=".modal-help"><i class="far fa-question-circle"></i> HELP</a></li>
+                    <li class="quick-menu"><a href="#" data-toggle="modal" data-target=".modal-hours"><i class="far fa-clock"></i> HOURS</a></li>
+                    <li class="quick-menu"><a href="#" data-toggle="modal" data-target=".modal-hours"><i class="fas fa-search"></i> SEARCH</a></li>
+                  
+                  </ul>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+      <div class="section-header">
+
+        Research Guides
+
+      </div>
+
+      <!-- GUIDE HEADER -->
+      <div class="guide-header">
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-md-12">
+
+              <h1 class="guide-title">Guide Title</h1>
+
+              <div class="guide-description">
+                This is the guide description.
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- GUIDE CONTENT -->
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-3">
+
+              <div class="list-group list-group-csplib">
+                  <a href="#" class="list-group-item active">
+                    Cras justo odio
+                  </a>
+                  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                  <a href="#" class="list-group-item">Morbi leo risus</a>
+                  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                  <a href="#" class="list-group-item">Vestibulum at eros</a>
+                </div>
+
+          </div>
+
+          <div class="col-md-9">
+
+            <h2 class="page-title">Page Title</h2>
+
+            <h3 class="box-title">Box Title</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor et purus sed auctor. Aenean id aliquam turpis, vitae hendrerit elit. Phasellus condimentum condimentum libero, nec pulvinar felis. Donec vestibulum enim id sapien convallis placerat. In sed nisl eget nibh placerat vehicula vitae in leo. Nullam accumsan nisl magna. In et vulputate sem. Aliquam viverra eleifend arcu eget vestibulum. Nulla lorem mi, ultrices a ornare sed, porta eget justo. Mauris sagittis in felis et vestibulum. Praesent ultricies, dolor non varius tincidunt, diam nulla luctus nisl, id interdum velit ex eu justo. Morbi fermentum lobortis tortor, vitae egestas purus tempor ac. Phasellus sem quam, posuere sit amet leo vitae, malesuada tincidunt lorem. Nulla rutrum, leo non consectetur vulputate, eros tortor dictum mi, sed fermentum lectus ante et turpis. Duis quam lacus, viverra ut ligula ac, ullamcorper euismod justo.</p>
+
+            <div class="feature-box">
+    
+                <div class="feature-box-text">
+    
+                    <i class="far fa-lightbulb fa-3x"></i>
+                  
+                  Feature box without a title. Aenean id aliquam turpis, vitae hendrerit elit. Phasellus condimentum condimentum libero, nec pulvinar felis.
+    
+                </div>
+
+    
+              </div>
+            
+            <h3 class="box-title">Another Box</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor et purus sed auctor. Aenean id aliquam turpis, vitae hendrerit elit. Phasellus condimentum condimentum libero, nec pulvinar felis. Donec vestibulum enim id sapien convallis placerat. In sed nisl eget nibh placerat vehicula vitae in leo. Nullam accumsan nisl magna. In et vulputate sem. Aliquam viverra eleifend arcu eget vestibulum. Nulla lorem mi, ultrices a ornare sed, porta eget justo. Mauris sagittis in felis et vestibulum. Praesent ultricies, dolor non varius tincidunt, diam nulla luctus nisl, id interdum velit ex eu justo. Morbi fermentum lobortis tortor, vitae egestas purus tempor ac. Phasellus sem quam, posuere sit amet leo vitae, malesuada tincidunt lorem. Nulla rutrum, leo non consectetur vulputate, eros tortor dictum mi, sed fermentum lectus ante et turpis. Duis quam lacus, viverra ut ligula ac, ullamcorper euismod justo.</p>
+
+            <div class="feature-box">
+
+                <div class="feature-box-header">
+    
+                  FEATURE BOX WITH TITLE
+    
+                </div>
+    
+                <div class="feature-box-intro-text">
+    
+                  Optional subtitle
+    
+                </div>
+    
+                <div class="feature-box-text">
+    
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor et purus sed auctor. Aenean id aliquam turpis, vitae hendrerit elit. Phasellus condimentum condimentum libero, nec pulvinar felis.
+    
+                </div>
+
+    
+              </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+</body>
+
+</html>

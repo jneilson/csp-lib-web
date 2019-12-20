@@ -1,0 +1,26 @@
+[
+	{
+		"text": "Home",
+		"website-link": "http://easyautocomplete.com/"
+	},
+	{
+		"text": "Hours",
+		"website-link": "https://library.csp.edu/hours"
+	},
+	{
+		"text": "JSTOR",
+		"website-link": "https://library.csp.edu/jstor"
+	},
+	{
+		"text": "Examples",
+		"website-link": "http://easyautocomplete.com/examples"
+	},
+	{
+		"text": "Download",
+		"website-link": "http://easyautocomplete.com/download"
+	},
+	{
+		"text": "Github",
+		"website-link": "https://github.com/pawelczak/EasyAutocomplete"
+	}
+]

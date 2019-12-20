@@ -19,6 +19,10 @@
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/8c36e38b79.js" crossorigin="anonymous"></script>
 
+    <!-- EasyAutocomplete -->
+    <script src="jquery.easy-autocomplete.min.js"></script>
+    <link rel="stylesheet" href="easy-autocomplete.min.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -347,12 +351,57 @@ a.nav-option{
       <div class="pull-right">
         <ul class="quick-menu">
           
-          <li class="quick-menu"><i class="far fa-question-circle"></i> HELP</li>
-          <li class="quick-menu"><i class="far fa-clock"></i> HOURS</li>
-          <li class="quick-menu"><i class="fas fa-search"></i> SEARCH</li>
+          <li class="quick-menu"><a href="#" data-toggle="modal" data-target=".modal-help"><i class="far fa-question-circle"></i> HELP</a></li>
+          <li class="quick-menu"><a href="#" data-toggle="modal" data-target=".modal-hours"><i class="far fa-clock"></i> HOURS</a></li>
+          <li class="quick-menu"><a href="#" data-toggle="modal" data-target=".modal-hours"><i class="fas fa-search"></i> SEARCH</a></li>
         
         </ul>
       </div>
+
+      <!-- HELP MODAL -->
+      <div class="modal fade modal-help" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title feature-box-header">Help</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>   
+            </div>
+          </div>
+        </div>
+
+        <!-- HOURS MODAL -->
+        <div class="modal fade modal-hours" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title feature-box-header">Hours</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>One fine body&hellip;</p>
+                  </div>   
+              </div>
+            </div>
+          </div>
+
+        <!-- SEARCH MODAL -->
+        <div class="modal fade modal-search" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title feature-box-header">Search</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>One fine body&hellip;</p>
+                  </div>   
+              </div>
+            </div>
+          </div>
 
     </div>
     
@@ -633,11 +682,37 @@ a.nav-option{
 
       </div>
 
+      <script>
+
+          $(document).ready(function () {
+      
+            var options = {
+              url: 'autocomplete.json',
+      
+              getValue: 'text',
+      
+              template: {
+                type: 'links',
+                fields: {
+                  link: 'website-link'
+                }
+              },
+      
+              theme: 'plate-dark'
+            };
+      
+            $('#autocomplete').easyAutocomplete(options);
+      
+          });
+      
+        </script>
+      
+
       <div class="featurette">
           <div class="featurette-inner text-center">
              <form role="form" class="search">
                 <div class="input-group input-group-lg">
-                   <input type="search" placeholder="Search for articles, books, and more..." class="form-control">
+                   <input type="search" placeholder="Search for articles, books, and more..." class="form-control" id="autocomplete">
                    <span class="input-group-btn">
                    <button class="btn csp-gold-bg" type="button">Search</button>
                    </span>
@@ -999,6 +1074,15 @@ a.nav-option{
         </div>
 
       </div>
+        
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Panel title</h3>
+          </div>
+          <div class="panel-body">
+            Panel content
+          </div>
+        </div>
 
   </body>
 
