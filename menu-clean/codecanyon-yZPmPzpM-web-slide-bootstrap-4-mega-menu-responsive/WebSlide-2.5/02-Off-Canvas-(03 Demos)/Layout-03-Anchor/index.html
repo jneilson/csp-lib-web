@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WebSlide Navigation System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Vendor -->
+  <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!-- Vendor -->
+
+  <!--Main Menu File-->
+  <link rel="stylesheet" type="text/css" media="all" href="webslidemenu/webslidemenu.css" />
+  <link id="theme" rel="stylesheet" type="text/css" media="all" href="webslidemenu/color-skins/white-red.css" />
+
+  <!-- Include Below JS After Your jQuery.min File -->
+  <script type="text/javascript" src="webslidemenu/webslidemenu.js"></script>
+  <!--Main Menu File-->
+
+
+  <!--For Demo Only (Remove below css and Javascript) -->
+  <link rel="stylesheet" href="webslidemenu/demo.css" />
+  <script type='text/javascript'>
+    $(document).ready(function () {
+      $("a[data-theme]").click(function () {
+        $("head link#theme").attr("href", $(this).data("theme"));
+        $(this).toggleClass('active').siblings().removeClass('active');
+      });
+      $("a[data-effect]").click(function () {
+        $("head link#effect").attr("href", $(this).data("effect"));
+        $(this).toggleClass('active').siblings().removeClass('active');
+      });
+    });
+  </script>
+  <!--For Demo Only (Remove below css and Javascript) -->
+
+</head>
+
+<body>
+
+  <!-- Mobile Header -->
+  <div class="wsmobileheader clearfix">
+    <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+    <span class="smllogo"><a href="#"></a></span>
+    <div class="wssearch clearfix">
+      <i class="wssearchicon fas fa-search"></i>
+      <i class="wscloseicon fas fa-times"></i>
+      <div class="wssearchform clearfix">
+        <form>
+          <input type="text" placeholder="Search Here">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Header -->
+
+  <nav class="wsmenu clearfix">
+    <ul class="wsmenu-list">
+      <li class="leftlogo"><a href="#menu01"></a></li>
+      <li><a href="#menu01"><i class="fas fa-align-justify"></i> Section Part 01</a></li>
+      <li><a href="#menu02"><i class="fas fa-info-circle"></i> Section Part 02</a></li>
+      <li><a href="#menu03"><i class="fas fa-cogs"></i> Section Part 03 </a></li>
+      <li><a href="#menu04"><i class="fas fa-question-circle"></i> Section Part 04 </a></li>
+      <li><a href="#menu05"><i class="fas fa-paper-plane"></i> Section Part 05 </a> </li>
+      <li><a href="#menu06"><i class="fas fa-paper-plane"></i> Section Part 06 </a> </li>
+    </ul>
+  </nav>
+
+
+  <section class="sectionarea01" id="menu01">
+
+    <div class="swichermainbx clearfix">
+      <div class="swichermainleft">
+        <p class="swichertxt02"><span>Ready to use skins with </span>White</p>
+        <a class="wscolorcode blackborder cred" href="#" data-theme="webslidemenu/color-skins/white-red.css"></a>
+        <a class="wscolorcode blackborder cblue" href="#" data-theme="webslidemenu/color-skins/white-blue.css"></a>
+        <a class="wscolorcode blackborder corange" href="#" data-theme="webslidemenu/color-skins/white-orange.css"></a>
+        <a class="wscolorcode blackborder cgreen" href="#" data-theme="webslidemenu/color-skins/white-green.css"></a>
+        <a class="wscolorcode blackborder cpink" href="#" data-theme="webslidemenu/color-skins/white-pink.css"></a>
+        <a class="wscolorcode blackborder cyellow" href="#" data-theme="webslidemenu/color-skins/white-yellow.css"></a>
+        <a class="wscolorcode blackborder cpurple" href="#" data-theme="webslidemenu/color-skins/white-purple.css"></a>
+        <a class="wscolorcode blackborder cgry" href="#" data-theme="webslidemenu/color-skins/white-gry.css"></a>
+
+      </div>
+      <div class="swichermainright">
+        <p class="swichertxt02"><span>Ready to use skins with </span>Black</p>
+        <a class="wscolorcode blackborder cred" href="#" data-theme="webslidemenu/color-skins/black-red.css"></a>
+        <a class="wscolorcode blackborder cblue active" href="#" data-theme="webslidemenu/color-skins/black-blue.css"></a>
+        <a class="wscolorcode blackborder corange" href="#" data-theme="webslidemenu/color-skins/black-orange.css"></a>
+        <a class="wscolorcode blackborder cgreen" href="#" data-theme="webslidemenu/color-skins/black-green.css"></a>
+        <a class="wscolorcode blackborder cpink" href="#" data-theme="webslidemenu/color-skins/black-pink.css"></a>
+        <a class="wscolorcode blackborder cyellow" href="#" data-theme="webslidemenu/color-skins/black-yellow.css"></a>
+        <a class="wscolorcode blackborder cpurple" href="#" data-theme="webslidemenu/color-skins/black-purple.css"></a>
+        <a class="wscolorcode blackborder cgry" href="#" data-theme="webslidemenu/color-skins/black-gry.css"></a>
+      </div>
+      <br>
+      <br>
+      <div>
+        <p class="swichertxt02"><span>Ready to use skins with </span>Gradient colors</p>
+        <a class="wscolorcode grd-green" href="#" data-theme="webslidemenu/color-skins/grd-green.css"></a>
+        <a class="wscolorcode grd-blue" href="#" data-theme="webslidemenu/color-skins/grd-blue.css"></a>
+        <a class="wscolorcode grd-red" href="#" data-theme="webslidemenu/color-skins/grd-red.css"></a>
+        <a class="wscolorcode grd-light-green" href="#" data-theme="webslidemenu/color-skins/grd-light-green.css"></a>
+        <a class="wscolorcode grd-pink" href="#" data-theme="webslidemenu/color-skins/grd-pink.css"></a>
+        <a class="wscolorcode grd-orange" href="#" data-theme="webslidemenu/color-skins/grd-orange.css"></a>
+        <a class="wscolorcode grd-black" href="#" data-theme="webslidemenu/color-skins/grd-black.css"></a>
+        <a class="wscolorcode grd-gry" href="#" data-theme="webslidemenu/color-skins/grd-gry.css"></a>
+      </div>
+
+    </div>
+
+  </section>
+  <section class="sectionarea02" id="menu02"></section>
+  <section class="sectionarea03" id="menu03"></section>
+  <section class="sectionarea04" id="menu04"></section>
+  <section class="sectionarea05" id="menu05"></section>
+  <section class="sectionarea06" id="menu06"></section>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WebSlide Navigation System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Vendor -->
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!-- Vendor -->
+
+  <!--Main Menu File-->
+  <link id="effect" rel="stylesheet" type="text/css" media="all" href="webslidemenu/dropdown-effects/fade-down.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="webslidemenu/webslidemenu.css" />
+  <link id="theme" rel="stylesheet" type="text/css" media="all" href="webslidemenu/color-skins/white-gry.css" />
+
+
+  <!--Main Menu File-->
+
+
+  <!--For Demo Only (Remove below css and Javascript) -->
+  <link rel="stylesheet" href="webslidemenu/demo.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type='text/javascript'>
+    $(document).ready(function () {
+      $("a[data-theme]").click(function () {
+        $("head link#theme").attr("href", $(this).data("theme"));
+        $(this).toggleClass('active').siblings().removeClass('active');
+      });
+      $("a[data-effect]").click(function () {
+        $("head link#effect").attr("href", $(this).data("effect"));
+        $(this).toggleClass('active').siblings().removeClass('active');
+      });
+    });
+  </script>
+  <!--For Demo Only (Remove below css and Javascript) -->
+
+</head>
+
+<body>
+
+  <div class="topbarbg clearfix">
+    <div class="headerwp clearfix">
+      <div class="desktoplogo clearfix"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+    </div>
+
+
+    <!--Main Menu HTML Code-->
+    <nav class="wsmenu clearfix">
+      <label for="wsmainlinks" class="wsdownopener"><i class="fas fa-bars"></i> Menu</label>
+      <input type="checkbox" id="wsmainlinks" class="wsdexpander" />
+      <ul class="wsmenu-list">
+        <li aria-haspopup="true"><a href="#" class="wshomeico active"><i class="fas fa-home"></i><span class="hometext">&nbsp;&nbsp;Home</span></a></li>
+        <li aria-haspopup="true">
+          <label for="wsmainlinks-1" class="wsdownopener-sub"></label>
+          <a href="#"><i class="fas fa-align-justify"></i>Dropdown<i class="wsdmdownic fas fa-angle-down"></i></a>
+          <input type="checkbox" id="wsmainlinks-1" class="wsdexpander" />
+          <ul class="sub-menu">
+            <li aria-haspopup="true"><a href="#">Website Design </a></li>
+            <li aria-haspopup="true"><a href="#">Ecommerce Solutions</a></li>
+            <li aria-haspopup="true"><a href="#">Application Development</a></li>
+            <li aria-haspopup="true"><a href="#">Website Development</a></li>
+            <li aria-haspopup="true">
+              <label for="wsmainlinks-1-1" class="wsdownopener-sub"></label>
+              <a href="#">Open Source Development<i class="fas fa-angle-right"></i></a>
+              <input type="checkbox" id="wsmainlinks-1-1" class="wsdexpander" />
+              <ul class="sub-menu">
+                <li aria-haspopup="true"><a href="#">Submenu item 1</a></li>
+                <li aria-haspopup="true"><a href="#">Submenu item 2</a></li>
+                <li aria-haspopup="true"><a href="#">Submenu item 3</a></li>
+                <li aria-haspopup="true">
+                  <label for="wsmainlinks-1-2" class="wsdownopener-sub"></label>
+                  <a href="#">Submenu item 4<i class="fas fa-angle-right"></i></a>
+                  <input type="checkbox" id="wsmainlinks-1-2" class="wsdexpander" />
+                  <ul class="sub-menu">
+                    <li aria-haspopup="true"><a href="#">Submenu item 1 Sub</a></li>
+                    <li aria-haspopup="true"><a href="#">Submenu item 2 Sub</a></li>
+                    <li aria-haspopup="true"><a href="#">Submenu item 3 Sub</a></li>
+                    <li aria-haspopup="true"><a href="#">Submenu item 4 Sub</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li aria-haspopup="true">
+          <label for="wsmainlinks-2" class="wsdownopener-sub"></label>
+          <a href="#"><i class="fas fa-list-alt"></i>Half menu <i class="wsdmdownic fas fa-angle-down"></i></a>
+          <input type="checkbox" id="wsmainlinks-2" class="wsdexpander" />
+          <div class="wsmegamenu clearfix halfmenu">
+            <div class="container-fluid">
+              <div class="row">
+
+                <ul class="col-lg-6 col-md-12 col-xs-12 link-list">
+                  <li class="title">Product Header</li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                </ul>
+                <ul class="col-lg-6 col-md-12 col-xs-12 link-list">
+                  <li class="title">Product Header</li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </li>
+        <li aria-haspopup="true">
+          <label for="wsmainlinks-3" class="wsdownopener-sub"></label>
+          <a href="#"><i class="fas fa-list-ul"></i>Mega menu <i class="wsdmdownic fas fa-angle-down"></i></a>
+          <input type="checkbox" id="wsmainlinks-3" class="wsdexpander" />
+          <div class="wsmegamenu clearfix">
+            <div class="container-fluid">
+              <div class="row">
+
+                <ul class="col-lg-3 col-md-12 col-xs-12 link-list">
+                  <li class="title">Product Header</li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                </ul>
+
+                <ul class="col-lg-3 col-md-12 col-xs-12 link-list">
+                  <li class="title">Product Header</li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                </ul>
+
+                <ul class="col-lg-3 col-md-12 col-xs-12 link-list">
+                  <li class="title">Product Header</li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                  <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+                </ul>
+
+                <div class="col-lg-3 col-md-12 col-xs-12">
+
+                  <h3 class="title">New Arrival </h3>
+                  <div class="newadimg"><img src="images/image01.jpg" alt="" /> </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </li>
+        <li aria-haspopup="true">
+          <label for="wsmainlinks-4" class="wsdownopener-sub"></label>
+          <a href="#"><i class="fas fa-th-large"></i>Product images <i class="wsdmdownic fas fa-angle-down"></i></a>
+          <input type="checkbox" id="wsmainlinks-4" class="wsdexpander" />
+          <div class="wsmegamenu clearfix ">
+            <div class="container">
+              <div class="row">
+
+
+                <div class="col-lg-4 col-md-12 col-xs-12">
+                  <h3 class="title">Product Features</h3>
+                  <div class="fluid-width-video-wrapper"><img src="images/image02.jpg" alt="" /> </div>
+                  <p class="wsmwnutxt">Lorem Ipsum is dummy text of the printing specimen book. It has survived not
+                    only five centuries, but also typesetting in the the contantly with desktoncluding.</p>
+                </div>
+                <div class="col-lg-4 col-md-12 col-xs-12">
+                  <h3 class="title">Blog Article </h3>
+                  <div class="fluid-width-video-wrapper"><img src="images/image03.jpg" alt="" /> </div>
+                  <p class="wsmwnutxt">Lorem Ipsum is dummy text of the printing specimen book. It has survived not
+                    only five centuries, but also typesetting in the the contantly with desktoncluding.</p>
+                </div>
+                <div class="col-lg-4 col-md-12 col-xs-12">
+                  <h3 class="title">Highlight Your Services</h3>
+                  <div class="fluid-width-video-wrapper"><a href="#"><img src="images/image04.jpg" alt="" /></a> </div>
+                  <p class="wsmwnutxt">Lorem Ipsum is dummy text of the printing specimen book. It has survived not
+                    only five centuries, but also typesetting in the the contantly with desktoncluding.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </li>
+        <li aria-haspopup="true">
+          <label for="wsmainlinks-5" class="wsdownopener-sub"></label>
+          <a href="#"><i class="fas fa-paragraph"></i>Typography <i class="wsdmdownic fas fa-angle-down"></i></a>
+          <input type="checkbox" id="wsmainlinks-5" class="wsdexpander" />
+          <div class="wsmegamenu clearfix">
+            <div class="typography-text clearfix">
+              <div class="container-fluid">
+                <div class="row">
+
+                  <div class="col-lg-6 col-sm-12">
+                    <h3 class="title">This is another title</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                      the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a
+                      type
+                      specimen book. It has survived not only five centuries, but also the leap into electronic
+                      typesetting, remaining essentially unchanged. It was popularised in the 1960s Ipsum more recently
+                      with desktop publishing software like
+                      Aldus
+                      PageMaker including versions of Lorem Ipsum.</p>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-12">
+                    <h3 class="title">This is another title</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                      classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                      professor at Hampden-Sydney
+                      College in
+                      Virginia.
+                    </p>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-12">
+                    <h3 class="title">This is another title</h3>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                      classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                      professor at Hampden-Sydney
+                      College in
+                      Virginia.
+                    </p>
+                  </div>
+
+                </div>
+
+                <div class="row">
+                  <div class="cl"></div>
+
+                  <div class="col-lg-3 col-sm-12">
+                    <h3 class="title">Other Services</h3>
+                    <ul>
+                      <li><a href="#"><i class="fab fa-wordpress"></i>Wordpress Development</a></li>
+                      <li><a href="#"><i class="fab fa-drupal"></i>Drupal Development</a></li>
+                      <li><a href="#"><i class="fas fa-shopping-cart"></i>Shoping Cart Development</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-12">
+                    <h3 class="title">More Services</h3>
+                    <ul>
+                      <li><a href="#"><i class="fab fa-android"></i> Android App Development</a></li>
+                      <li><a href="#"><i class="fab fa-apple"></i>iPhone App Development</a></li>
+                      <li><a href="#"><i class="fab fa-windows"></i>Windows App Development</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-12">
+                    <h3 class="title">Other Products</h3>
+                    <ul>
+                      <li><a href="#"><i class="fab fa-wordpress"></i>Wordpress Development</a></li>
+                      <li><a href="#"><i class="fab fa-drupal"></i>Drupal Development</a></li>
+                      <li><a href="#"><i class="fab fa-joomla"></i>Joomla Development</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-lg-3 col-sm-12">
+                    <h3 class="title">More Services</h3>
+                    <ul>
+                      <li><a href="#"><i class="fab fa-android"></i> Android App Development</a></li>
+                      <li><a href="#"><i class="fab fa-html5"></i>HTML5 App Development</a></li>
+                      <li><a href="#"><i class="fab fa-paypal"></i>Paypal Store Integration</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </li>
+        <li aria-haspopup="true">
+          <label for="wsmainlinks-6" class="wsdownopener-sub"></label>
+          <a href="#"><i class="fas fa-th-list"></i>Grid system <i class="wsdmdownic fas fa-angle-down"></i></a>
+          <input type="checkbox" id="wsmainlinks-6" class="wsdexpander" />
+          <div class="wsmegamenu clearfix">
+            <div class="container-fluid">
+              <div class="row show-grid">
+
+                <div class="col-lg-1 col-md-12">.col-md-1</div>
+                <div class="col-lg-1 col-md-12">.col-md-1</div>
+                <div class="col-lg-1 col-md-12">.col-md-1</div>
+                <div class="col-lg-1 col-md-12">.col-md-1</div>
+                <div class="col-lg-1 col-md-12">.col-md-1</div>
+                <div class="col-lg-1 col-md-12">.col-md-1</div>
+                <div class="col-lg-1 col-md-12">.col-md-1</div>
+                <div class="col-lg-1 col-md-12">.col-md-1</div>
+                <div class="col-lg-1 col-md-12">.col-md-1</div>
+                <div class="col-lg-1 col-md-12">.col-md-1</div>
+                <div class="col-lg-1 col-md-12">.col-md-1</div>
+                <div class="col-lg-1 col-md-12">.col-md-1</div>
+
+                <div class="col-lg-2 col-md-12">.col-md-2</div>
+                <div class="col-lg-2 col-md-12">.col-md-2</div>
+                <div class="col-lg-2 col-md-12">.col-md-2</div>
+                <div class="col-lg-2 col-md-12">.col-md-2</div>
+                <div class="col-lg-2 col-md-12">.col-md-2</div>
+                <div class="col-lg-2 col-md-12">.col-md-2</div>
+
+                <div class="col-lg-3 col-md-12">.col-md-3</div>
+                <div class="col-lg-3 col-md-12">.col-md-3</div>
+                <div class="col-lg-3 col-md-12">.col-md-3</div>
+                <div class="col-lg-3 col-md-12">.col-md-3</div>
+
+                <div class="col-lg-4 col-md-12">.col-md-4</div>
+                <div class="col-lg-4 col-md-12">.col-md-4</div>
+                <div class="col-lg-4 col-md-12">.col-md-4</div>
+
+                <div class="col-lg-6 col-md-12">.col-md-6</div>
+                <div class="col-lg-6 col-md-12">.col-md-6</div>
+
+                <div class="col-lg-12 col-md-12">.col-md-12</div>
+
+              </div>
+            </div>
+
+          </div>
+        </li>
+        <li aria-haspopup="true">
+          <label for="wsmainlinks-7" class="wsdownopener-sub"></label>
+          <a href="#"><i class="fas fa-paper-plane"></i>Contact Us <i class="wsdmdownic fas fa-angle-down"></i></a>
+          <input type="checkbox" id="wsmainlinks-7" class="wsdexpander" />
+          <div class="wsmegamenu halfdiv">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h3 class="title">Contact Form</h3>
+                  <form name="contact_name" class="menu_form">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <textarea placeholder="Your message..."></textarea>
+                    <input type="button" value="Reset">
+                    <input type="submit" value="Send">
+
+                  </form>
+                  <div class="cl"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+
+
+  </div>
+
+
+
+  <div class="swichermainbx clearfix">
+    <div class="swichermainleft">
+      <p class="swichertxt02"><span>Ready to use skins with </span>White</p>
+      <a class="wscolorcode blackborder cgry active" href="#" data-theme="webslidemenu/color-skins/white-gry.css"></a>
+      <a class="wscolorcode blackborder cblue" href="#" data-theme="webslidemenu/color-skins/white-blue.css"></a>
+      <a class="wscolorcode blackborder cred" href="#" data-theme="webslidemenu/color-skins/white-red.css"></a>
+      <a class="wscolorcode blackborder corange" href="#" data-theme="webslidemenu/color-skins/white-orange.css"></a>
+      <a class="wscolorcode blackborder cgreen" href="#" data-theme="webslidemenu/color-skins/white-green.css"></a>
+      <a class="wscolorcode blackborder cpink" href="#" data-theme="webslidemenu/color-skins/white-pink.css"></a>
+      <a class="wscolorcode blackborder cyellow" href="#" data-theme="webslidemenu/color-skins/white-yellow.css"></a>
+      <a class="wscolorcode blackborder cpurple" href="#" data-theme="webslidemenu/color-skins/white-purple.css"></a>
+    </div>
+    <div class="swichermainright">
+      <p class="swichertxt02"><span>Ready to use skins with </span>Gradient colors</p>
+      <a class="wscolorcode grd-green" href="#" data-theme="webslidemenu/color-skins/grd-green.css"></a>
+      <a class="wscolorcode grd-blue" href="#" data-theme="webslidemenu/color-skins/grd-blue.css"></a>
+      <a class="wscolorcode grd-red" href="#" data-theme="webslidemenu/color-skins/grd-red.css"></a>
+      <a class="wscolorcode grd-light-green" href="#" data-theme="webslidemenu/color-skins/grd-light-green.css"></a>
+      <a class="wscolorcode grd-pink" href="#" data-theme="webslidemenu/color-skins/grd-pink.css"></a>
+      <a class="wscolorcode grd-orange" href="#" data-theme="webslidemenu/color-skins/grd-orange.css"></a>
+      <a class="wscolorcode grd-black" href="#" data-theme="webslidemenu/color-skins/grd-black.css"></a>
+      <a class="wscolorcode grd-gry" href="#" data-theme="webslidemenu/color-skins/grd-gry.css"></a>
+    </div>
+    <br>
+    <br>
+
+    <div class="swichermainright swichertxt">
+      <p class="swichertxt02">Ready to use animation effect</p>
+      <a class="wscolorcode cblack active" title="Fade Down" href="#" data-effect="webslidemenu/dropdown-effects/fade-down.css"><i
+          class="fas fa-level-down-alt"></i></a>
+      <a class="wscolorcode cblack" title="Fade Up" href="#" data-effect="webslidemenu/dropdown-effects/fade-up.css"><i
+          class="fas fa-level-up-alt"></i></a>
+      <a class="wscolorcode cblack" title="Fade Left" href="#" data-effect="webslidemenu/dropdown-effects/fade-left.css"><i
+          class="fas fa-long-arrow-alt-left"></i></a>
+      <a class="wscolorcode cblack" title="Fade Right" href="#" data-effect="webslidemenu/dropdown-effects/fade-right.css"><i
+          class="fas fa-long-arrow-alt-right"></i></a>
+      <a class="wscolorcode cblack" title="Rotate Y" href="#" data-effect="webslidemenu/dropdown-effects/rotate-y.css"><i
+          class="fas fa-expand-arrows-alt"></i></a>
+      <a class="wscolorcode cblack" title="Rotate X" href="#" data-effect="webslidemenu/dropdown-effects/rotate-x.css"><i
+          class="fas fa-arrows-alt-h"></i></a>
+    </div>
+  </div>
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

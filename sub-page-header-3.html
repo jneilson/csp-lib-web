@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/8c36e38b79.js" crossorigin="anonymous"></script>
+
+        <!-- Mega Menu CSS -->
+        <link rel="stylesheet" href="https://jonbovi.info/redesign/menu.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <style>
+
+            /* fonts */
+            @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700&display=swap");
+            @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+            @import url("https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy&display=swap");
+
+            /* quick menu on right of header */
+            ul.quick-menu {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            li.quick-menu {
+                display: inline;
+                font-family: "Oswald", sans-serif;
+                color: #393939;
+                margin: 0 10px 0 0;
+                font-size: 1.0em;
+            }
+
+            /* place CSP Lib logo on homepage */
+            .csp-lib-logo-home {
+                text-align: center;
+                margin: 30px 0 30px 0;
+            }
+
+            /* style CSP Lib logo - full screen */
+            img.csp-lib-logo {
+                width: 175px;
+            }
+
+            /* style CSP Lib logo - mobile */
+            img.csp-lib-logo-mobile {
+                width: 100px;
+                display: inline;
+            }
+
+            .mobile-menu-holder {
+                max-width: 200px;
+            }
+
+            .inline {
+                display: inline;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <!-- BEGIN quick menu -->
+        <div class="container">
+
+            <div class="pull-right">
+                <ul class="quick-menu">
+            
+                    <li class="quick-menu"><i class="far fa-question-circle"></i> HELP</li>
+                    <li class="quick-menu"><i class="far fa-clock"></i> HOURS</li>
+                    <li class="quick-menu"><i class="fas fa-search"></i> SEARCH</li>
+          
+                </ul>
+            </div>
+        
+        </div>
+        <!-- END quick menu -->
+
+         <!-- BEGIN csp lib logo -->
+        <div class="csp-lib-logo-home hidden-sm hidden-xs">
+
+            <a href=""><img class="img-fluid csp-lib-logo" src="https://jonbovi.info/redesign/csp-lib-logo.png" alt="CSP Library"></a>
+  
+        </div>
+        <!-- END csp lib logo -->
+
+        <!-- BEGIN nav bar -->
+        <div class="nav">
+            <nav>
+                <a href="javascript:void(0);" class="mobile-menu-trigger"><i class="fas fa-bars fa-lg"></i></a>
+                <a class="inline hidden-md hidden-lg" href=""><img class="img-fluid csp-lib-logo-mobile" src="https://jonbovi.info/redesign/csp-lib-logo.png" alt="CSP Library"></a>
+                <ul class="menu menu-bar">
+
+                    <!-- BEGIN find resources menu -->
+                    <li>
+                        <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Find Resources</a>
+                        <ul class="mega-menu mega-menu--flat">
+                            <!-- START HERE sub-menu -->
+                            <li>
+                                <a href="/page" class="menu-link mega-menu-link mega-menu-header">Start Here</a>
+                                <ul class="menu menu-list">
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Getting Started Guide</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Overview of Library Collections</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Subject-Specific Guides</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- RESOURCES BY TYPE sub-menu -->
+                            <li>
+                                <a href="/page" class="menu-link mega-menu-link mega-menu-header">Resources by Type</a>
+                                <ul class="menu menu-list">
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Databases</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Articles</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Journals & Magazines</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Books & eBooks</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Streaming Videos</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Course Reserves</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- RESOURCES BY SUBJECT sub-menu -->
+                            <li>
+                                <a href="/page" class="menu-link mega-menu-link mega-menu-header">Resources by Subject</a>
+                                <ul class="menu menu-list">
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">2.2.1 Page link</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">2.2.2 Page link</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- FOR INSTRUCTORS sub-menu -->
+                            <li>
+                                <a href="/page" class="menu-link mega-menu-link mega-menu-header">For Instructors</a>
+                                <ul class="menu menu-list">
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Using Library Resources in Your Course</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Open Resources</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- DIGITAL & SPECIAL COLLECTIONS sub-menu-->
+                            <li>
+                                <a href="/page" class="menu-link mega-menu-link mega-menu-header">Digital & Special Collections</a>
+                                <ul class="menu menu-list">
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Digital Collections</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Archives & Special Collections</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu-back-item">
+                                <a href="javascript:void(0);" class="menu-link mobile-menu-back-link">Back</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END find resources menu -->
+        
+                    <!-- BEGIN services menu -->
+                    <li>
+                        <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Services</a>
+                        <ul class="mega-menu mega-menu--flat">
+                            <!-- BORROWING sub-menu -->
+                            <li>
+                                <a href="/page" class="menu-link mega-menu-link mega-menu-header">Borrowing</a>
+                                <ul class="menu menu-list">
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Borrowing & Reenwing Library Materials</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Library Accounts</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Equipment</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- RESEARCH ASSISTANCE sub-menu -->
+                            <li>
+                                <a href="/page" class="menu-link mega-menu-link mega-menu-header">Research Assistance</a>
+                                <ul class="menu menu-list">
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Ask a Librarian</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Getting Started Guide</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Research Guides</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Research Tools</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Citations</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- LIBRARY INSTRUCTION sub-menu -->
+                            <li>
+                                <a href="/page" class="menu-link mega-menu-link mega-menu-header">Library Instruction</a>
+                                <ul class="menu menu-list">
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Instruction Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Request Library Instruction</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Online Tutorials</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Faculty Guides</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- TUTORING & WRITING sub-menu -->
+                            <li>
+                                <a href="/page" class="menu-link mega-menu-link mega-menu-header">Tutoring & Writing</a>
+                                <ul class="menu menu-list">
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Tutoring Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Writing Center</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Schedule an Appointment</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Brainfuse Online Tutoring</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Citations</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- DIGITAL SCHOLARSHIP sub-menu -->
+                            <li>
+                                <a href="/page" class="menu-link mega-menu-link mega-menu-header">Digital Scholarship</a>
+                                <ul class="menu menu-list">
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">About Digital Scholarship</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Digital Commons@CSP</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Schedule an Appointment</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Open Access</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu-back-item">
+                                <a href="javascript:void(0);" class="menu-link mobile-menu-back-link">Back</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END services menu -->
+
+                    <!-- BEGIN about menu -->
+                    <li>
+                        <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">About</a>
+                        <ul class="mega-menu mega-menu--flat">
+                            <li>
+                                <a href="/page" class="menu-link mega-menu-link mega-menu-header">About the Library</a>
+                                <ul class="menu menu-list">
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Welcome</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Staff</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Facts & Figures</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">News & Events</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Policies</a>
+                                    </li>
+                                </ul>
+                            <li class="mobile-menu-back-item">
+                                <a href="javascript:void(0);" class="menu-link mobile-menu-back-link">Back</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END about menu -->
+
+                    <!-- BEGIN help menu -->
+                    <li>
+                        <a href="javascript:void(0);" class="menu-link menu-bar-link" aria-haspopup="true">Help</a>
+                        <ul class="mega-menu mega-menu--flat">
+                            <!-- ASK A LIBRARIAN sub-menu -->
+                            <li>
+                                <a href="/page" class="menu-link mega-menu-link mega-menu-header">Ask a Librarian</a>
+                                <ul class="menu menu-list">
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Chat 24x7</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Call Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Email</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Visit</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- HELP WITH... sub-menu -->
+                            <li>
+                                <a href="/page" class="menu-link mega-menu-link mega-menu-header">Help With...</a>
+                                <ul class="menu menu-list">
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Tutoring</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Writing</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Technology Issues</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Printting/Copying/Scanning</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Blackboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page" class="menu-link menu-list-link">Citing Sources</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu-back-item">
+                                <a href="javascript:void(0);" class="menu-link mobile-menu-back-link">Back</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END help menu -->
+        
+                    <li class="mobile-menu-header">
+                        <a href="/home" class="">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </body>
+
+</html>

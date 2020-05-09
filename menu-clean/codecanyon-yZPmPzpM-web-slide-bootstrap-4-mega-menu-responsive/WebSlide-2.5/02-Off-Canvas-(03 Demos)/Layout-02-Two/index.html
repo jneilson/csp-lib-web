@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WebSlide Navigation System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Vendor -->
+  <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!-- Vendor -->
+
+  <!--Main Menu File-->
+  <link rel="stylesheet" type="text/css" media="all" href="webslidemenu/webslidemenu.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="webslidemenu/webslidemenu02.css" />
+  <link id="theme" rel="stylesheet" type="text/css" media="all" href="webslidemenu/color-skins/white-red.css" />
+
+  <!-- Include Below JS After Your jQuery.min File -->
+  <script type="text/javascript" src="webslidemenu/webslidemenu.js"></script>
+
+  <!--Main Menu File-->
+
+
+  <!--For Demo Only (Remove below css and Javascript) -->
+  <link rel="stylesheet" href="webslidemenu/demo.css" />
+  <script type='text/javascript'>
+    $(document).ready(function () {
+      $("a[data-theme]").click(function () {
+        $("head link#theme").attr("href", $(this).data("theme"));
+        $(this).toggleClass('active').siblings().removeClass('active');
+      });
+      $("a[data-effect]").click(function () {
+        $("head link#effect").attr("href", $(this).data("effect"));
+        $(this).toggleClass('active').siblings().removeClass('active');
+      });
+    });
+  </script>
+  <!--For Demo Only (Remove below css and Javascript) -->
+
+</head>
+
+<body>
+
+  <!-- Mobile Header -->
+  <div class="wsmobileheader clearfix">
+    <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+    <span class="smllogo"><a href="#"></a></span>
+    <a id="wsnavtoggle02" class="wsanimated-arrow02"><span></span></a>
+  </div>
+  <!-- Mobile Header -->
+
+  <div class="wsmenu02 clearfix">
+    <div class="wsmenu02-list">
+      <div class="wsmenu02-title">Section Header Style</div>
+
+      <div class="wsmenu02text clearfix">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type
+          specimen book.It has survived not only five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages, and
+          more recentlywith desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. orem
+          Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type
+          specimen book.It has survived not only five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages, and
+          more recentlywith desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. orem
+          Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and specimen book. It has survived not only five
+          centuries,cluding versions of Lorem Ipsum.</p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+  <nav class="wsmenu clearfix">
+    <ul class="wsmenu-list">
+      <li class="leftlogo"><a href="#"></a></li>
+      <li aria-haspopup="true"><a href="#" class="active"><i class="fas fa-home"></i><span
+            class="hometext">&nbsp;&nbsp;Home</span></a></li>
+      <li aria-haspopup="true"><a href="#"><i class="fas fa-align-justify"></i>Dropdowns <span
+            class="wsarrow"></span></a>
+        <ul class="sub-menu">
+          <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Website Design </a></li>
+          <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Ecommerce Solutions</a></li>
+          <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Application Development</a></li>
+          <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Website Development</a></li>
+          <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Open Source Development</a>
+            <ul class="sub-menu">
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 1</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 2</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 3</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 4</a>
+                <ul class="sub-menu">
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 1 Sub</a></li>
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 2 Sub</a></li>
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 3 Sub</a></li>
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 4 Sub</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li aria-haspopup="true"><a href="#"><i class="fas fa-list-alt"></i>Half menu <span class="wsarrow"></span></a>
+        <div class="wsmegamenu clearfix halfmenu">
+
+          <ul class="link-list">
+            <li class="title">Product Header</li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+          </ul>
+          <ul class="link-list">
+            <li class="title">Product Header</li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+          </ul>
+
+        </div>
+      </li>
+      <li aria-haspopup="true"><a href="#"><i class="fas fa-list-ul"></i>Mega menu <span class="wsarrow"></span></a>
+        <div class="wsmegamenu clearfix">
+
+
+          <ul class="link-list">
+            <li class="title">Product Header</li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+          </ul>
+
+          <ul class="link-list">
+            <li class="title">Product Header</li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+          </ul>
+
+          <ul class="link-list">
+            <li class="title">Product Header</li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+            <li><a href="#"><i class="fas fa-arrow-circle-right"></i>Submenu link style</a></li>
+          </ul>
+
+          <div>
+            <h3 class="title">New Arrival </h3>
+            <div><img src="images/image01.jpg" alt="" /></div>
+          </div>
+
+
+        </div>
+      </li>
+      <li aria-haspopup="true"><a href="#"><i class="fas fa-th-large"></i>Product images <span
+            class="wsarrow"></span></a>
+        <div class="wsmegamenu clearfix ">
+
+
+          <div>
+            <h3 class="title">CodeCanyon</h3>
+            <div class="fluid-width-video-wrapper"><a href="#"><img src="images/image01.jpg" alt="" /></a> </div>
+          </div>
+          <div>
+            <h3 class="title">ThemeForest</h3>
+            <div class="fluid-width-video-wrapper"><img src="images/image02.jpg" alt="" /> </div>
+          </div>
+          <div>
+            <h3 class="title">GraphicRiver </h3>
+            <div class="fluid-width-video-wrapper"><img src="images/image03.jpg" alt="" /> </div>
+          </div>
+          <div>
+            <h3 class="title mrgtop">ActiveDen</h3>
+            <div class="fluid-width-video-wrapper"><a href="#"><img src="images/image04.jpg" alt="" /></a> </div>
+          </div>
+          <div class="">
+            <h3 class="title mrgtop">PhotoDune</h3>
+            <div class="fluid-width-video-wrapper"><img src="images/image05.jpg" alt="" /> </div>
+          </div>
+          <div>
+            <h3 class="title mrgtop">3DOcean </h3>
+            <div class="fluid-width-video-wrapper"><img src="images/image06.jpg" alt="" /> </div>
+          </div>
+
+
+        </div>
+      </li>
+
+
+      <li aria-haspopup="true"><a href="#"><i class="fas fa-paper-plane"></i>Contact Us <span
+            class="wsarrow"></span></a>
+        <div class="wsmegamenu halfdiv">
+
+          <h3 class="title">Contact Form</h3>
+          <form name="contact_name" class="menu_form">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <textarea placeholder="Your message..."></textarea>
+            <input type="button" value="Reset">
+            <input type="submit" value="Send">
+
+          </form>
+          <div class="cl"></div>
+
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <br>
+
+
+  <div class="swichermainbx clearfix">
+    <div class="swichermainleft">
+      <p class="swichertxt02"><span>Ready to use skins with </span>White</p>
+      <a class="wscolorcode blackborder cred" href="#" data-theme="webslidemenu/color-skins/white-red.css"></a>
+      <a class="wscolorcode blackborder cblue" href="#" data-theme="webslidemenu/color-skins/white-blue.css"></a>
+      <a class="wscolorcode blackborder corange" href="#" data-theme="webslidemenu/color-skins/white-orange.css"></a>
+      <a class="wscolorcode blackborder cgreen" href="#" data-theme="webslidemenu/color-skins/white-green.css"></a>
+      <a class="wscolorcode blackborder cpink" href="#" data-theme="webslidemenu/color-skins/white-pink.css"></a>
+      <a class="wscolorcode blackborder cyellow" href="#" data-theme="webslidemenu/color-skins/white-yellow.css"></a>
+      <a class="wscolorcode blackborder cpurple" href="#" data-theme="webslidemenu/color-skins/white-purple.css"></a>
+      <a class="wscolorcode blackborder cgry" href="#" data-theme="webslidemenu/color-skins/white-gry.css"></a>
+
+    </div>
+    <div class="swichermainright">
+      <p class="swichertxt02"><span>Ready to use skins with </span>Black</p>
+      <a class="wscolorcode blackborder cred" href="#" data-theme="webslidemenu/color-skins/black-red.css"></a>
+      <a class="wscolorcode blackborder cblue active" href="#" data-theme="webslidemenu/color-skins/black-blue.css"></a>
+      <a class="wscolorcode blackborder corange" href="#" data-theme="webslidemenu/color-skins/black-orange.css"></a>
+      <a class="wscolorcode blackborder cgreen" href="#" data-theme="webslidemenu/color-skins/black-green.css"></a>
+      <a class="wscolorcode blackborder cpink" href="#" data-theme="webslidemenu/color-skins/black-pink.css"></a>
+      <a class="wscolorcode blackborder cyellow" href="#" data-theme="webslidemenu/color-skins/black-yellow.css"></a>
+      <a class="wscolorcode blackborder cpurple" href="#" data-theme="webslidemenu/color-skins/black-purple.css"></a>
+      <a class="wscolorcode blackborder cgry" href="#" data-theme="webslidemenu/color-skins/black-gry.css"></a>
+    </div>
+    <br>
+    <br>
+    <div>
+      <p class="swichertxt02"><span>Ready to use skins with </span>Gradient colors</p>
+      <a class="wscolorcode grd-green" href="#" data-theme="webslidemenu/color-skins/grd-green.css"></a>
+      <a class="wscolorcode grd-blue" href="#" data-theme="webslidemenu/color-skins/grd-blue.css"></a>
+      <a class="wscolorcode grd-red" href="#" data-theme="webslidemenu/color-skins/grd-red.css"></a>
+      <a class="wscolorcode grd-light-green" href="#" data-theme="webslidemenu/color-skins/grd-light-green.css"></a>
+      <a class="wscolorcode grd-pink" href="#" data-theme="webslidemenu/color-skins/grd-pink.css"></a>
+      <a class="wscolorcode grd-orange" href="#" data-theme="webslidemenu/color-skins/grd-orange.css"></a>
+      <a class="wscolorcode grd-black" href="#" data-theme="webslidemenu/color-skins/grd-black.css"></a>
+      <a class="wscolorcode grd-gry" href="#" data-theme="webslidemenu/color-skins/grd-gry.css"></a>
+    </div>
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>

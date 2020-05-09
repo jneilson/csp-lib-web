@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>WebSlide Navigation System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Vendor -->
+  <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!-- Vendor -->
+
+  <!--Main Menu File-->
+  <link id="effect" rel="stylesheet" type="text/css" media="all" href="webslidemenu/dropdown-effects/fade-down.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="webslidemenu/webslidemenu.css" />
+
+  <link id="theme" rel="stylesheet" type="text/css" media="all" href="webslidemenu/color-skins/white-red.css" />
+
+  <!-- Include Below JS After Your jQuery.min File -->
+  <script type="text/javascript" src="webslidemenu/webslidemenu.js"></script>
+  <!--Main Menu File-->
+
+
+  <!--For Demo Only (Remove below css and Javascript) -->
+  <link rel="stylesheet" href="webslidemenu/demo.css" />
+  <script type='text/javascript'>
+    $(document).ready(function () {
+      $("a[data-theme]").click(function () {
+        $("head link#theme").attr("href", $(this).data("theme"));
+        $(this).toggleClass('active').siblings().removeClass('active');
+      });
+      $("a[data-effect]").click(function () {
+        $("head link#effect").attr("href", $(this).data("effect"));
+        $(this).toggleClass('active').siblings().removeClass('active');
+      });
+    });
+  </script>
+  <!--For Demo Only (Remove below css and Javascript) -->
+
+
+</head>
+
+<body>
+
+  <!-- Mobile Header -->
+  <div class="wsmobileheader clearfix ">
+    <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+    <span class="smllogo"><img src="images/menu-logo.png" width="80" alt="" /></span>
+    <div class="wssearch clearfix">
+      <i class="wsmobsearchopen fas fa-search"></i>
+      <i class="wsmobsearchclose fas fa-times"></i>
+      <div class="wssearchform clearfix">
+        <form>
+          <input type="text" placeholder="Search Here">
+
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Header -->
+
+
+
+  <div class="wsmainfull clearfix">
+    <div class="wsmainwp clearfix">
+
+
+      <div class="desktoplogo"><a href="#"><img src="images/sml-logo02.png" alt=""></a></div>
+      <div class="wssearch wssearchdesktop clearfix">
+        <i class="wsopenmenuic fas fa-search"></i>
+        <i class="wsclosemenuic fas fa-times"></i>
+        <div class="wssearchform clearfix">
+          <form>
+            <input type="text" placeholder="Search Here">
+
+
+
+          </form>
+        </div>
+      </div>
+      <!--Main Menu HTML Code-->
+      <nav class="wsmenu clearfix">
+        <ul class="wsmenu-list">
+          <li aria-haspopup="true"><a href="#" class="active menuhomeicon"><i class="fas fa-home"></i><span class="hometext">
+                Home</span></a></li>
+          <li aria-haspopup="true"><a href="#">Dropdowns <span class="wsarrow"></span></a>
+            <ul class="sub-menu">
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Website Design </a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Ecommerce Solutions</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Application Development</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Website Development</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Open Source Development</a>
+                <ul class="sub-menu">
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 1</a></li>
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 2</a></li>
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 3</a></li>
+                  <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Submenu item 4</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li aria-haspopup="true"><a href="#">Simple Link</a></li>
+          <li aria-haspopup="true"><a href="#">Sub Menus <span class="wsarrow"></span></a>
+            <ul class="sub-menu">
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Website Design </a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Ecommerce Solutions</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Application Development</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Website Development</a></li>
+              <li aria-haspopup="true"><a href="#"><i class="fas fa-angle-right"></i>Open Source Development</a></li>
+            </ul>
+          </li>
+          <li aria-haspopup="true"><a href="#">Simple Link Demo</a></li>
+          <li aria-haspopup="true"><a href="#" class="wssignlinktop"><i class="fas fa-sign-in-alt"></i>
+              Login</a></li>
+          <li aria-haspopup="true"><a href="tel:1234567890" class="wsheadphoneno"><i class="fas fa-phone"></i> Call
+              me</a></li>
+        </ul>
+      </nav>
+
+      <!--Menu HTML Code-->
+    </div>
+  </div>
+
+
+  <div class="swichermainbx clearfix">
+    <div class="swichermainleft">
+      <p class="swichertxt02"><span>Ready to use skins with </span>White</p>
+      <a class="wscolorcode blackborder cblue" data-theme="webslidemenu/color-skins/white-blue.css"></a>
+      <a class="wscolorcode blackborder cred" data-theme="webslidemenu/color-skins/white-red.css"></a>
+      <a class="wscolorcode blackborder corange" data-theme="webslidemenu/color-skins/white-orange.css"></a>
+      <a class="wscolorcode blackborder cgreen" data-theme="webslidemenu/color-skins/white-green.css"></a>
+      <a class="wscolorcode blackborder cpink" data-theme="webslidemenu/color-skins/white-pink.css"></a>
+      <a class="wscolorcode blackborder cyellow" data-theme="webslidemenu/color-skins/white-yellow.css"></a>
+      <a class="wscolorcode blackborder cpurple" data-theme="webslidemenu/color-skins/white-purple.css"></a>
+      <a class="wscolorcode blackborder cgry" data-theme="webslidemenu/color-skins/white-gry.css"></a>
+
+    </div>
+    <div class="swichermainright">
+      <p class="swichertxt02"><span>Ready to use skins with </span>Gradient colors</p>
+      <a class="wscolorcode grd-green" data-theme="webslidemenu/color-skins/grd-green.css"></a>
+      <a class="wscolorcode grd-blue" data-theme="webslidemenu/color-skins/grd-blue.css"></a>
+      <a class="wscolorcode grd-red" data-theme="webslidemenu/color-skins/grd-red.css"></a>
+      <a class="wscolorcode grd-light-green" data-theme="webslidemenu/color-skins/grd-light-green.css"></a>
+      <a class="wscolorcode grd-pink" data-theme="webslidemenu/color-skins/grd-pink.css"></a>
+      <a class="wscolorcode grd-orange" data-theme="webslidemenu/color-skins/grd-orange.css"></a>
+      <a class="wscolorcode grd-black" data-theme="webslidemenu/color-skins/grd-black.css"></a>
+      <a class="wscolorcode grd-gry" data-theme="webslidemenu/color-skins/grd-gry.css"></a>
+    </div>
+    <br>
+    <br>
+
+    <div class="swichermainright swichertxt">
+      <p class="swichertxt02">Ready to use animation effect</p>
+      <a class="wscolorcode cblack active" title="Fade Down" data-effect="webslidemenu/dropdown-effects/fade-down.css"><i
+          class="fas fa-level-down-alt"></i></a>
+      <a class="wscolorcode cblack" title="Fade Up" data-effect="webslidemenu/dropdown-effects/fade-up.css"><i class="fas fa-level-up-alt"></i></a>
+      <a class="wscolorcode cblack" title="Fade Left" data-effect="webslidemenu/dropdown-effects/fade-left.css"><i
+          class="fas fa-long-arrow-alt-left"></i></a>
+      <a class="wscolorcode cblack" title="Fade Right" data-effect="webslidemenu/dropdown-effects/fade-right.css"><i
+          class="fas fa-long-arrow-alt-right"></i></a>
+      <a class="wscolorcode cblack" title="Rotate Y" data-effect="webslidemenu/dropdown-effects/rotate-y.css"><i class="fas fa-expand-arrows-alt"></i></a>
+      <a class="wscolorcode cblack" title="Rotate X" data-effect="webslidemenu/dropdown-effects/rotate-x.css"><i class="fas fa-arrows-alt-h"></i></a>
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+
+
+
+
+
+
+</body>
+
+</html>
