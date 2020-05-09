@@ -1,0 +1,97 @@
+
+/* Desktop Main Menu Color */
+
+.wsmainfull {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c659a7), to(#fd67a0));
+  background: -webkit-linear-gradient(left, #c659a7, #fd67a0);
+  background: -moz-linear-gradient(left, #c659a7, #fd67a0);
+  background: -o-linear-gradient(left, #c659a7, #fd67a0);
+  background: -ms-linear-gradient(left, #c659a7, #fd67a0);
+  background: linear-gradient(left, #c659a7, #fd67a0);
+  background-color: #cc48d4;
+  color: #fff;
+}
+
+.wsmenu>.wsmenu-list {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c659a7), to(#fd67a0));
+  background: -webkit-linear-gradient(left, #c659a7, #fd67a0);
+  background: -moz-linear-gradient(left, #c659a7, #fd67a0);
+  background: -o-linear-gradient(left, #c659a7, #fd67a0);
+  background: -ms-linear-gradient(left, #c659a7, #fd67a0);
+  background: linear-gradient(left, #c659a7, #fd67a0);
+  background-color: #cc48d4;
+  color: #fff;
+}
+
+/* Mobile Header */
+
+.desktoplogo a{
+  color: #fff !important;
+}
+
+.wsmenu>.wsmenu-list>li.headerbtns a.headerbtn01{
+  background-color: #fff;
+  color: #444 !important;
+}
+
+.wsmenu>.wsmenu-list>li.headerbtns a.headerbtn02{
+  border:none !important;
+  color: #444 !important;
+}
+
+.wsmenu>.wsmenu-list>li>a:after {
+  background-color: #fff;
+}
+
+
+.wsmobileheader {
+  background-color: #fff;
+}
+
+.wsmenu>.wsmenu-list>li>a {
+  color: #fff;
+}
+ 
+.wsmenu>.wsmenu-list>li>a.active {
+  color: #fff;
+}
+
+.wsmenu>.wsmenu-list>li:hover>a {
+  color: #fff;
+}
+
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li:hover>a {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c659a7), to(#fd67a0));
+  background: -webkit-linear-gradient(left, #c659a7, #fd67a0);
+  background: -moz-linear-gradient(left, #c659a7, #fd67a0);
+  background: -o-linear-gradient(left, #c659a7, #fd67a0);
+  background: -ms-linear-gradient(left, #c659a7, #fd67a0);
+  background: linear-gradient(left, #c659a7, #fd67a0);
+  background-color: #cc48d4;
+  color: #fff;
+}
+
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li:hover>a {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c659a7), to(#fd67a0));
+  background: -webkit-linear-gradient(left, #c659a7, #fd67a0);
+  background: -moz-linear-gradient(left, #c659a7, #fd67a0);
+  background: -o-linear-gradient(left, #c659a7, #fd67a0);
+  background: -ms-linear-gradient(left, #c659a7, #fd67a0);
+  background: linear-gradient(left, #c659a7, #fd67a0);
+  background-color: #cc48d4;
+  color: #fff;
+}
+
+.wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li:hover a {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c659a7), to(#fd67a0));
+  background: -webkit-linear-gradient(left, #c659a7, #fd67a0);
+  background: -moz-linear-gradient(left, #c659a7, #fd67a0);
+  background: -o-linear-gradient(left, #c659a7, #fd67a0);
+  background: -ms-linear-gradient(left, #c659a7, #fd67a0);
+  background: linear-gradient(left, #c659a7, #fd67a0);
+  background-color: #cc48d4;
+  color: #fff;
+}
+
+
+  

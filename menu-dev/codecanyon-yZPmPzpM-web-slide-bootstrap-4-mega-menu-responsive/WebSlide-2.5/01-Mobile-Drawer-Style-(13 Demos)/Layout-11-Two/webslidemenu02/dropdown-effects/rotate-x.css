@@ -1,0 +1,91 @@
+.wsmenu02>.wsmenu02-list>li>ul.sub-menu02 {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform: rotateY(-90deg);
+  -ms-transform: rotateY(-90deg);
+  -o-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transition: all 0.3s ease-in, opacity 0.2s linear;
+  -moz-transition: all 0.3s ease-in, opacity 0.2s linear;
+  transition: all 0.3s ease-in, opacity 0.2s linear;
+}
+
+.wsmenu02>.wsmenu02-list>li:hover>ul.sub-menu02 {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.wsmenu02>.wsmenu02-list>li>ul.sub-menu02>li>ul.sub-menu02 {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform: rotateY(-90deg);
+  -ms-transform: rotateY(-90deg);
+  -o-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transition: all 0.3s ease-in, opacity 0.2s linear;
+  -moz-transition: all 0.3s ease-in, opacity 0.2s linear;
+  transition: all 0.3s ease-in, opacity 0.2s linear;
+}
+
+.wsmenu02>.wsmenu02-list>li>ul.sub-menu02>li:hover>ul.sub-menu02 {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.wsmenu02>.wsmenu02-list>li>ul.sub-menu02>li>ul.sub-menu02>li>ul.sub-menu02 {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform: rotateY(-90deg);
+  -ms-transform: rotateY(-90deg);
+  -o-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transition: all 0.3s ease-in, opacity 0.2s linear;
+  -moz-transition: all 0.3s ease-in, opacity 0.2s linear;
+  transition: all 0.3s ease-in, opacity 0.2s linear;
+}
+
+.wsmenu02>.wsmenu02-list>li>ul.sub-menu02>li>ul.sub-menu02>li:hover>ul.sub-menu02 {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.wsmenu02>.wsmenu02-list>li>.wsmegamenu02 {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform: rotateY(-90deg);
+  -ms-transform: rotateY(-90deg);
+  -o-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transition: all 0.3s ease-in, opacity 0.2s linear;
+  -moz-transition: all 0.3s ease-in, opacity 0.2s linear;
+  transition: all 0.3s ease-in, opacity 0.2s linear;
+}
+
+.wsmenu02>.wsmenu02-list>li:hover>.wsmegamenu02 {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
